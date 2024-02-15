@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={elsie.className}>{children}</body>
+      <body className={`bg-background ${elsie.className}`}>{children}</body>
     </html>
   );
 }
