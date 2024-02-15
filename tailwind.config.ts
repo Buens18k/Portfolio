@@ -9,7 +9,7 @@ const config: Config = {
     extend: {
       colors: {
         background: '#191918',
-        test: '#B5B3AD',
+        text: '#B5B3AD',
         menu: '#2A2A28',
       },
     },

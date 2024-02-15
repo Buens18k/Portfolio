@@ -16,7 +16,7 @@ function Header() {
   };
 
   return (
-    <header className=" text-test">
+    <header>
       <nav className="p-5 md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
           {/* Utilisation du composant réutilisable 'Logo' et de ces props typés */}
