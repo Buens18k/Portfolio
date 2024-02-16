@@ -1,6 +1,6 @@
 import Banner from './components/banner';
 import Biography from './components/biography';
-import Button from './components/button';
+import ButtonContact from './components/buttonContact';
 
 export default function Home() {
   const mutliText = {
@@ -17,10 +17,10 @@ export default function Home() {
         <div className=" flex flex-col gap-5 md:w-7/12">
           <Biography name="Bruno Vang" trade="Develloppeur Frontend" text={mutliText} />
           <div className="flex gap-5 md:w-1/2">
-            <Button title="GitHub" />
-            <Button title="Linkedin" />
-            <Button title="Twitter" />
-            <Button title="Instagram" />
+            <ButtonContact svg="/images/github.svg" title="GitHub" />
+            <ButtonContact svg="/images/linkedin.svg" title="Linkedin" />
+            <ButtonContact svg="/images/xtwitter.svg" title="Twitter" />
+            <ButtonContact svg="/images/instagram.svg" title="Instagram" />
           </div>
         </div>
       </section>
