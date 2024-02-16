@@ -10,7 +10,7 @@ interface biographyProps {
 
 function Biography({ name, trade, text }: biographyProps) {
   return (
-    <div className="flex flex-col items-center md:items-start md:w-1/2 gap-3">
+    <div className="flex flex-col items-center md:items-start gap-3">
       <h1 className="flex justify-center text-5xl font-bold underline decoration-white-500">
         {name}
         <br />
