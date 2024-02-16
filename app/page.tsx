@@ -4,14 +4,14 @@ import Biography from './components/biography';
 export default function Home() {
   const mutliText = {
     lines: [
-      'Salut toi !!!',
+      'Hello !!!',
       "Passionné par la création d'experience utilisateur en utilisant des technologies web innovantes et des pratiques de développement moderners pour concevoir des interfaces utilisateur interactives, réactives et esthétiques.",
     ],
   };
 
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl">
-      <section className="flex flex-col justify-between items-center md:flex-row w-full border-solid border-2 border-red-600">
+      <section className="flex flex-col justify-center md:justify-between items-center md:flex-row w-full">
         <Banner src="photoBruno.webp" alt="Photo Profil de Bruno" width={500} height={500} />
         <Biography name="Bruno Vang" trade="Develloppeur Frontend" text={mutliText} />
       </section>

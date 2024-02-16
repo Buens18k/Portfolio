@@ -11,7 +11,7 @@ interface MenuIconProps {
 // Déclaration du composant 'MenuIcon' en utilisant une fonction fléchée accèptant les props typées de 'MenuIconProps'.
 const MenuIcon = ({ isMenuOpen, toggleMenu }: MenuIconProps) => {
   return (
-    <button className="text-2xl md:hidden" onClick={toggleMenu} aria-label="Toggle Menu" type="button">
+    <button className="text-6xl md:hidden" onClick={toggleMenu} aria-label="Toggle Menu" type="button">
       <FontAwesomeIcon icon={faBars} />
     </button>
   );
