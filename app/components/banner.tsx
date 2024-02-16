@@ -9,7 +9,7 @@ interface PictureProps {
 
 function Banner({ src, alt, width, height }: PictureProps) {
   return (
-    <div className="flex border-solid border-2 border-yellow-600 rounded-full w-96 h-96">
+    <div className="flex border-solid border-2 border-yellow-600 rounded-full w-52 h-52 md:w-96 md:h-96">
       <Image className="flex object-cover rounded-full w-100 h-100 " src={`/images/${src}`} alt={alt} priority width={width} height={height} />
     </div>
   );
