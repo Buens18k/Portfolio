@@ -5,4 +5,5 @@ export type LogoProps = {
   priority?: boolean;
   width?: number;
   height?: number;
+  priority?: boolean;
 };
