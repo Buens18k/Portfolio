@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-background text-text ${elsie.className}`}>
+      <body className={`bg-background max-w-screen-2xl m-auto text-text ${elsie.className}`}>
         <Header />
         {children}
       </body>
