@@ -1,18 +1,16 @@
 import Image from 'next/image';
 
 interface skillProps {
-  svg: string;
+  src: string;
   alt: string;
   skill: string;
 }
 
-function Skills({ svg, skill, alt }: skillProps) {
+function Skills({ src, skill, alt }: skillProps) {
   return (
-    <div className="flex gap-x-3 items-center">
-      <p className="flex">
-        <Image className="w-5 h-5" src={svg} alt={alt} width={500} height={500} priority />
-        {skill}
-      </p>
+    <div className="flex text-xl flex-wrap items-center gap-1">
+      <Image className="w-5 h-5" src={`/images/${src}`} alt={alt} width={500} height={500} priority />
+      <p className="flex-wrap">{skill}</p>
     </div>
   );
 }

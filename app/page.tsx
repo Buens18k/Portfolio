@@ -1,20 +1,20 @@
 import Banner from './components/banner';
 import Biography from './components/biography';
 import ButtonContact from './components/buttonContact';
-import Skills from './components/skills';
+import SkillsContent from './components/skillsContent';
 
 export default function Home() {
   const mutliText = {
     lines: [
       'Hello !!!',
-      "Passionné par la création d'experience utilisateur en utilisant des technologies web innovantes et des pratiques de développement moderners pour concevoir des interfaces utilisateur interactives, réactives et esthétiques.",
+      'My passion lies in creating user experiences using innovative web technologies and modern development practices to create interactive, responsive, and aesthetically pleasing user interfaces.',
     ],
   };
 
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-10">
       <section className="flex flex-col justify-center md:justify-between items-center md:flex-row w-full">
-        <Banner src="photoBruno.webp" alt="Photo Profil de Bruno" width={500} height={500} />
+        <Banner src="moi.webp" alt="Photo Profil de Bruno" width={500} height={500} />
         <div className=" flex flex-col gap-8 md:w-7/12 lg:w-1/2">
           <Biography name="Bruno Vang" trade="Develloppeur Front-end" text={mutliText} />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
@@ -26,15 +26,24 @@ export default function Home() {
         </div>
       </section>
       <section className="flex w-full">
-        <div className="flex flex-col justify-center w-full items-center">
+        <div className="flex flex-col justify-center w-full items-center gap-5">
           <h2 className="text-5xl font-bold text-text">Skills</h2>
-
-          <div className="flex md:flex-row justify-center w-full gap-1">
-            <h3 className="flex text-2xl font-semibold items-center md:flex md:text-3xl">Design</h3>
-            <Skills svg="/images/figma.svg" alt="logo figma" skill="Figma" />
-            <Skills svg="/images/tailwind.svg" alt="logo Tailwind" skill="Tailwind" />
-            {/* <Skills title="Front-end" svg="/images/figma.svg" alt="logo figma" skills="React" /> */}
-            {/* <Skills title="Other" svg="/images/figma.svg" alt="logo figma" skills="git&gitHub" /> */}
+          <div className="flex flex-col gap-3 lg:flex-row lg:gap-7 md:flex-row md:w-3/4">
+            <SkillsContent
+              title="Design"
+              skills={[
+                { src: 'figma.svg', alt: 'logo figma', skill: 'Figma' },
+                { src: 'tailwind.svg', alt: 'logo tailwind', skill: 'Tailwind' },
+              ]}
+            />
+            <SkillsContent
+              title="Front-end"
+              skills={[
+                { src: 'react.svg', alt: 'logo react', skill: 'React' },
+                { src: 'typescript.svg', alt: 'logo TypeScript', skill: 'TypeScript' },
+              ]}
+            />
+            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'git&gitHub' }]} />
           </div>
         </div>
       </section>
