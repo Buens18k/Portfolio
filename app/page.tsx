@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-10">
       <section className="flex flex-col justify-center md:justify-between items-center md:flex-row w-full">
-        <Banner src="photoBruno.webp" alt="Photo Profil de Bruno" width={500} height={500} />
+        <Banner src="moi.webp" alt="Photo Profil de Bruno" width={500} height={500} />
         <div className=" flex flex-col gap-8 md:w-7/12 lg:w-1/2">
           <Biography name="Bruno Vang" trade="Develloppeur Front-end" text={mutliText} />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
