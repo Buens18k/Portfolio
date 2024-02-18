@@ -11,6 +11,7 @@ interface biographyProps {
 function Biography({ name, trade, text }: biographyProps) {
   return (
     <div className="flex flex-col items-center md:items-start gap-3">
+      <p className="font-elsie text-xl">I&apos;m</p>
       <h1 className="flex justify-center text-5xl font-bold underline decoration-white-500">
         {name}
         <br />
@@ -19,9 +20,9 @@ function Biography({ name, trade, text }: biographyProps) {
         {trade}
         <br />
       </h2>
-      <p className="flex flex-col justify-center md:justify-start text-center md:text-left items-center md:items-start text-wrap gap-2 md:text-2xl">
+      <p className="flex flex-col justify-center md:justify-start text-center text-xl md:text-left items-center md:items-start text-wrap gap-2 md:text-2xl">
         {text.lines.map((line, index) => (
-          <span className="flex justify-center items-center md:items-start" key={index}>
+          <span className="flex text-xl justify-center items-center md:items-start" key={index}>
             {line} <br />
           </span>
         ))}

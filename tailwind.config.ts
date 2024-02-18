@@ -8,9 +8,9 @@ const config: Config = {
     },
     extend: {
       colors: {
-        background: '#191918',
-        text: '#B5B3AD',
-        menu: '#2A2A28',
+        background: '#191111',
+        text: '#FFE7B3',
+        menu: '#1B180F',
       },
     },
   },
