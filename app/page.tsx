@@ -30,8 +30,10 @@ export default function Home() {
         </div>
       </section>
       <section className="flex w-full">
-        <div className="flex flex-col justify-center w-full items-center gap-5">
-          <h2 className="text-4xl font-bold text-text">Skills</h2>
+        <div className="flex flex-col justify-center w-full items-center gap-6">
+          <h2 className="text-4xl font-bold text-text" id="skills">
+            Skills
+          </h2>
           <div className="flex flex-col w-full gap-3 lg:flex-row lg:gap-7 md:flex-row md:w-3/4">
             <SkillsContent
               title="Design"
@@ -52,8 +54,10 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full">
-        <div className="flex flex-col items-center gap-5">
-          <h4 className="text-3xl font-bold text-text">Projects</h4>
+        <div className="flex flex-col items-center gap-8 ">
+          <h4 className="text-3xl font-bold text-text" id="projects">
+            Projects
+          </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Project src="p6.webp" alt="picture Project 6" titleProject="JavaScript" text={textProject.js} />
             <Project src="p8.webp" alt="picture Project 8" titleProject="React" text={textProject.js} />
@@ -62,9 +66,9 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center gap-8">
           <h5 className="text-3xl font-bold text-text">Contact</h5>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-2/4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             <ButtonContact svg="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact svg="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
             <ButtonContact svg="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
