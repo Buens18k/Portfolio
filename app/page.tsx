@@ -61,8 +61,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div>Contact</div>
+      <section className="w-full">
+        <div className="flex flex-col items-center justify-center">
+          <h5 className="text-3xl font-bold text-text">Contact</h5>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-2/4">
+            <ButtonContact svg="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
+            <ButtonContact svg="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
+            <ButtonContact svg="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
+            <ButtonContact svg="/images/instagram.svg" buttonLink={{ title: 'Instagram', url: 'https://www.instagram.com/vang_bruno18/' }} />
+          </div>
+        </div>
       </section>
     </main>
   );
