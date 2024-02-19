@@ -11,7 +11,7 @@ interface biographyProps {
 function Biography({ name, trade, text }: biographyProps) {
   return (
     <div className="flex flex-col items-center md:items-start gap-3">
-      <p className="font-elsie text-xl">I&apos;m</p>
+      <p className="font-elsie text-xl">I&apos;m ...</p>
       <h1 className="flex justify-center text-5xl font-bold underline decoration-white-500">
         {name}
         <br />
