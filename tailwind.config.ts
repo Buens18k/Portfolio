@@ -14,6 +14,13 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extends: {
+      opacity: ['group-hover'],
+      display: ['group-hover'],
+      translate: ['group-hover'],
+    },
+  },
   plugins: [],
 };
 export default config;
