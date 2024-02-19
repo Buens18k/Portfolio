@@ -1,10 +1,13 @@
-import Image from 'next/image';
 import Banner from './components/banner';
 import Biography from './components/biography';
 import ButtonContact from './components/buttonContact';
+import Project from './components/project';
 import SkillsContent from './components/skillsContent';
 
 export default function Home() {
+  const textProject = {
+    js: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae iste nisi ex molestiae? Suscipit est nam adipisci nemo quam? Accusantium tenetur quas enim facilis dignissimos culpa repudiandae nesciunt eligendi!',
+  };
   const mutliText = {
     lines: [
       'Hello !!!',
@@ -52,51 +55,9 @@ export default function Home() {
         <div className="flex flex-col items-center gap-5">
           <h4 className="text-3xl font-bold text-text">Projects</h4>
           <div className="flex flex-col lg:flex-row gap-10">
-            <div className="group flex flex-col relative border-solid border-4 border-text p-3 rounded-xl">
-              <Image
-                className="w-96 h-96 opacity-100 group-hover:opacity-50 transition-opacity duration-300 bg-cover rounded-xl"
-                src="/images/p6.webp"
-                alt="Image du projet 1"
-                width={500}
-                height={500}
-                priority
-              />
-              <div className="hidden rounded-xl group-hover:flex group-hover:flex-col  group-hover:items-center group-hover:justify-center absolute inset-0 bg-menu p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-full group-hover:translate-x-0 animate-slideIn ease-in-out">
-                <h5 className="text-2xl">JavaScript</h5>
-                <p className="text-center text-xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit? Repellat similique voluptatibus sit ullam blanditiis
-                  nihil, incidunt aspernatur placeat autem magnam suscipit ipsam quibusdam alias iste maiores! Eligendi, commodi.
-                </p>
-              </div>
-            </div>
-            <div className="group flex flex-col relative border-solid border-4 border-text">
-              <Image
-                className="w-96 h-96 opacity-100 group-hover:opacity-50  transition-opacity duration-300"
-                src="/images/p8.webp"
-                alt="Image du projet 1"
-                width={500}
-                height={500}
-                priority
-              />
-              <p className=" text-text hidden group-hover:flex absolute inset-0 bg-menu p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-full group-hover:translate-x-0 animate-slideIn ease-in-out">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit? Repellat similique voluptatibus sit ullam blanditiis
-                nihil, incidunt aspernatur placeat autem magnam suscipit ipsam quibusdam alias iste maiores! Eligendi, commodi.
-              </p>
-            </div>
-            <div className="group flex flex-col relative border-solid border-4 border-text">
-              <Image
-                className="w-96 h-96 opacity-100 group-hover:opacity-50  transition-opacity duration-300"
-                src="/images/p11.webp"
-                alt="Image du projet 1"
-                width={500}
-                height={500}
-                priority
-              />
-              <p className=" text-text hidden group-hover:flex absolute inset-0 bg-menu p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-x-full group-hover:translate-x-0 animate-slideIn ease-in-out">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit? Repellat similique voluptatibus sit ullam blanditiis
-                nihil, incidunt aspernatur placeat autem magnam suscipit ipsam quibusdam alias iste maiores! Eligendi, commodi.
-              </p>
-            </div>
+            <Project src="p6.webp" alt="picture Project 6" titleProject="JavaScript" text={textProject.js} />
+            <Project src="p8.webp" alt="picture Project 8" titleProject="React" text={textProject.js} />
+            <Project src="p11.webp" alt="picture Project 11" titleProject="React" text={textProject.js} />
           </div>
         </div>
       </section>
