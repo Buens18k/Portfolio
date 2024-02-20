@@ -9,7 +9,7 @@ interface projectProps {
 
 function Project({ src, alt, titleProject, text }: projectProps) {
   return (
-    <div className="group flex flex-col relative border-solid border-4 border-text p-3 rounded-xl">
+    <div className="group flex flex-col relative border-solid border-4 border-text p-3 rounded-xl cursor-pointer">
       <Image
         className="w-96 h-72 md:h-80 lg:h-96 opacity-100 group-hover:opacity-50 transition-opacity duration-300 bg-cover rounded-xl"
         src={`/images/${src}`}

@@ -10,7 +10,6 @@ export default function Home() {
   };
   const mutliText = {
     lines: [
-      'Hello !!!',
       'My passion lies in creating user experiences using innovative web technologies and modern development practices to create interactive, responsive, and aesthetically pleasing user interfaces.',
     ],
   };
@@ -31,7 +30,7 @@ export default function Home() {
       </section>
       <section className="flex w-full">
         <div className="flex flex-col justify-center w-full items-center gap-6">
-          <h2 className="text-4xl font-bold text-text" id="skills">
+          <h2 className="text-4xl font-bold text-text underline" id="skills">
             Skills
           </h2>
           <div className="flex flex-col w-full gap-3 lg:flex-row lg:gap-7 md:flex-row md:w-3/4">
@@ -55,7 +54,7 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="flex flex-col items-center gap-8 ">
-          <h4 className="text-3xl font-bold text-text" id="projects">
+          <h4 className="text-3xl font-bold text-text underline" id="projects">
             Projects
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -67,7 +66,7 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="flex flex-col items-center justify-center gap-8">
-          <h5 className="text-3xl font-bold text-text">Contact</h5>
+          <h5 className="text-3xl font-bold text-text underline">Contact</h5>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             <ButtonContact svg="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact svg="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
