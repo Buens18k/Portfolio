@@ -28,7 +28,7 @@ const MenuItems: React.FC<{ isMenuOpen: boolean; toggleMenu: () => void }> = ({ 
       </a>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <a href="" className="text-2xl hover:underline duration-100">
+      <a href="/about" className="text-2xl hover:underline duration-100">
         About
       </a>
     </li>
