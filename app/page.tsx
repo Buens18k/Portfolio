@@ -55,7 +55,7 @@ export default function Home() {
                 { src: 'typescript.svg', alt: 'logo TypeScript', skill: 'TypeScript' },
               ]}
             />
-            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'git&gitHub' }]} />
+            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'git & gitHub' }]} />
           </div>
         </div>
       </section>
@@ -65,9 +65,15 @@ export default function Home() {
             Projects
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Project src="p6.webp" alt="picture Project 6" titleProject="Agence ArchiWebos" text={textProject.js} />
-            <Project src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={textProject.reactJS} />
-            <Project src="p11.webp" alt="picture Project 11" titleProject="Agence ArgentBank" text={textProject.reactRedux} />
+            <Project link="project/sophiebluel" src="p6.webp" alt="picture Project 6" titleProject="Agence ArchiWebos" text={textProject.js} />
+            <Project link="project/kasa" src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={textProject.reactJS} />
+            <Project
+              link="project/argentbank"
+              src="p11.webp"
+              alt="picture Project 11"
+              titleProject="Agence ArgentBank"
+              text={textProject.reactRedux}
+            />
           </div>
         </div>
       </section>
