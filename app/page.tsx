@@ -26,10 +26,10 @@ export default function Home() {
         <div className=" flex flex-col gap-8 md:w-7/12 lg:w-1/2">
           <Biography name="Bruno Vang" trade="Develloppeur Front-end" text={mutliText} />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
-            <ButtonContact svg="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
-            <ButtonContact svg="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
-            <ButtonContact svg="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
-            <ButtonContact svg="/images/instagram.svg" buttonLink={{ title: 'Instagram', url: 'https://www.instagram.com/vang_bruno18/' }} />
+            <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
+            <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
+            <ButtonContact src="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
+            <ButtonContact src="/images/instagram.svg" buttonLink={{ title: 'Instagram', url: 'https://www.instagram.com/vang_bruno18/' }} />
           </div>
         </div>
       </section>
@@ -73,11 +73,12 @@ export default function Home() {
       <section className="w-full">
         <div className="flex flex-col items-center justify-center gap-8 p-10">
           <h5 className="text-3xl font-bold text-text underline">Contact</h5>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-20">
-            <ButtonContact svg="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
-            <ButtonContact svg="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
-            <ButtonContact svg="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
-            <ButtonContact svg="/images/instagram.svg" buttonLink={{ title: 'Instagram', url: 'https://www.instagram.com/vang_bruno18/' }} />
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-5 p-20">
+            <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
+            <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
+            <ButtonContact src="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
+            <ButtonContact src="/images/instagram.svg" buttonLink={{ title: 'Instagram', url: 'https://www.instagram.com/vang_bruno18/' }} />
+            <ButtonContact src="/images/instagram.svg" buttonLink={{ title: 'Me contacter', url: 'mailto:buens@outlook.fr' }} />
           </div>
         </div>
       </section>
