@@ -80,7 +80,7 @@ export default function Home() {
       <section className="w-full">
         <div className="flex flex-col items-center justify-center gap-8 p-10">
           <h5 className="text-3xl font-bold text-text underline">Contact</h5>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-5 p-16">
+          <div className="grid grid-cols-2 justify-center md:grid-cols-5 gap-5 w-full  lg:w-4/5">
             <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
             <ButtonContact src="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
