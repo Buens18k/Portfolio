@@ -6,8 +6,13 @@ import SkillsContent from './components/skillsContent';
 
 export default function Home() {
   const textProject = {
-    js: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae iste nisi ex molestiae? Suscipit est nam adipisci nemo quam? Accusantium tenetur quas enim facilis dignissimos culpa repudiandae nesciunt eligendi!',
+    js: ' "PortFolio de Sophie Bluel" Architect. Réaliser avec le language JavaScript Vanilla. Utilisant plusieurs fonctionnaltés et communiquant avec des données dynamiques provenant d\'une API. Découpage maquette Figma.',
+    reactJS:
+      'Refonte du site Web de location d\'appartement, réalisée avec la stack JavaScript complète, utilisant React côté Front-end. Projet construit avec l\'outil "VITE", intégrant React Router, les hooks de React pour la gestion de l\'état local et de cycle de vie, ainsi que l\'utilisation du préprocesseur "SASS" pour élaborer des animations.',
+    reactRedux:
+      "Mise en place d'une application Web complète et responsive avec React. Gestion d'authentification et profile utilisateur avec Redux, utilisation des données provenant d'une BDD \"MongoDB\" en locale. Avis sur la mise en place des routes API pour visualisation des transactions. ",
   };
+
   const mutliText = {
     lines: [
       'My passion lies in creating user experiences using innovative web technologies and modern development practices to create interactive, responsive, and aesthetically pleasing user interfaces.',
@@ -38,6 +43,7 @@ export default function Home() {
               title="Design"
               skills={[
                 { src: 'figma.svg', alt: 'logo figma', skill: 'Figma' },
+                { src: 'sass.svg', alt: 'logo sass', skill: 'Sass' },
                 { src: 'tailwind.svg', alt: 'logo tailwind', skill: 'Tailwind' },
               ]}
             />
@@ -58,9 +64,9 @@ export default function Home() {
             Projects
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Project src="p6.webp" alt="picture Project 6" titleProject="JavaScript" text={textProject.js} />
-            <Project src="p8.webp" alt="picture Project 8" titleProject="React" text={textProject.js} />
-            <Project src="p11.webp" alt="picture Project 11" titleProject="React" text={textProject.js} />
+            <Project src="p6.webp" alt="picture Project 6" titleProject="Agence ArchiWebos" text={textProject.js} />
+            <Project src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={textProject.reactJS} />
+            <Project src="p11.webp" alt="picture Project 11" titleProject="Agence ArgentBank" text={textProject.reactRedux} />
           </div>
         </div>
       </section>
