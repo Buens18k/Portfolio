@@ -6,11 +6,15 @@ import SkillsContent from './components/skillsContent';
 
 export default function Home() {
   const textProject = {
-    js: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae iste nisi ex molestiae? Suscipit est nam adipisci nemo quam? Accusantium tenetur quas enim facilis dignissimos culpa repudiandae nesciunt eligendi!',
+    js: ' "PortFolio de Sophie Bluel" Architect. Réaliser avec le language JavaScript Vanilla. Utilisant plusieurs fonctionnaltés et communiquant avec des données dynamiques provenant d\'une API. Découpage maquette Figma.',
+    reactJS:
+      'Refonte du site Web de location d\'appartement, réalisée avec la stack JavaScript complète, utilisant React côté Front-end. Projet construit avec l\'outil "VITE", intégrant React Router, les hooks de React pour la gestion de l\'état local et de cycle de vie, ainsi que l\'utilisation du préprocesseur "SASS" pour élaborer des animations.',
+    reactRedux:
+      "Mise en place d'une application Web complète et responsive avec React. Gestion d'authentification et profile utilisateur avec Redux, utilisation des données provenant d'une BDD \"MongoDB\" en locale. Avis sur la mise en place des routes API pour visualisation des transactions. ",
   };
+
   const mutliText = {
     lines: [
-      'Hello !!!',
       'My passion lies in creating user experiences using innovative web technologies and modern development practices to create interactive, responsive, and aesthetically pleasing user interfaces.',
     ],
   };
@@ -30,13 +34,16 @@ export default function Home() {
         </div>
       </section>
       <section className="flex w-full">
-        <div className="flex flex-col justify-center w-full items-center gap-5">
-          <h2 className="text-4xl font-bold text-text">Skills</h2>
+        <div className="flex flex-col justify-center w-full items-center gap-6">
+          <h2 className="text-4xl font-bold text-text underline" id="skills">
+            Skills
+          </h2>
           <div className="flex flex-col w-full gap-3 lg:flex-row lg:gap-7 md:flex-row md:w-3/4">
             <SkillsContent
               title="Design"
               skills={[
                 { src: 'figma.svg', alt: 'logo figma', skill: 'Figma' },
+                { src: 'sass.svg', alt: 'logo sass', skill: 'Sass' },
                 { src: 'tailwind.svg', alt: 'logo tailwind', skill: 'Tailwind' },
               ]}
             />
@@ -52,19 +59,21 @@ export default function Home() {
         </div>
       </section>
       <section className="w-full">
-        <div className="flex flex-col items-center gap-5">
-          <h4 className="text-3xl font-bold text-text">Projects</h4>
+        <div className="flex flex-col items-center gap-8 ">
+          <h4 className="text-3xl font-bold text-text underline" id="projects">
+            Projects
+          </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Project src="p6.webp" alt="picture Project 6" titleProject="JavaScript" text={textProject.js} />
-            <Project src="p8.webp" alt="picture Project 8" titleProject="React" text={textProject.js} />
-            <Project src="p11.webp" alt="picture Project 11" titleProject="React" text={textProject.js} />
+            <Project src="p6.webp" alt="picture Project 6" titleProject="Agence ArchiWebos" text={textProject.js} />
+            <Project src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={textProject.reactJS} />
+            <Project src="p11.webp" alt="picture Project 11" titleProject="Agence ArgentBank" text={textProject.reactRedux} />
           </div>
         </div>
       </section>
       <section className="w-full">
-        <div className="flex flex-col items-center justify-center">
-          <h5 className="text-3xl font-bold text-text">Contact</h5>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-2/4">
+        <div className="flex flex-col items-center justify-center gap-8">
+          <h5 className="text-3xl font-bold text-text underline">Contact</h5>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
             <ButtonContact svg="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact svg="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
             <ButtonContact svg="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
