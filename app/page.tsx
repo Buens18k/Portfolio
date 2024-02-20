@@ -6,11 +6,11 @@ import SkillsContent from './components/skillsContent';
 
 export default function Home() {
   const textProject = {
-    js: ' "PortFolio de Sophie Bluel" Architect. Réaliser avec le language JavaScript Vanilla. Utilisant plusieurs fonctionnaltés et communiquant avec des données dynamiques provenant d\'une API. Découpage maquette Figma.',
+    js: ' "PortFolio de Sophie Bluel", Architect. Made using the JavaScript language. Using various functionalities and communicating with dynamic data from an API. Integration based on Figma model slicing.',
     reactJS:
-      'Refonte du site Web de location d\'appartement, réalisée avec la stack JavaScript complète, utilisant React côté Front-end. Projet construit avec l\'outil "VITE", intégrant React Router, les hooks de React pour la gestion de l\'état local et de cycle de vie, ainsi que l\'utilisation du préprocesseur "SASS" pour élaborer des animations.',
+      'Redesign of the apartment rental website, realized with the full JavaScript stack, using React on the front-end. Project built with the "VITE" tool, integrating React Router, React hooks for local state and lifecycle management, as well as the use of the "SASS" preprocessor to elaborate animations.',
     reactRedux:
-      "Mise en place d'une application Web complète et responsive avec React. Gestion d'authentification et profile utilisateur avec Redux, utilisation des données provenant d'une BDD \"MongoDB\" en locale. Avis sur la mise en place des routes API pour visualisation des transactions. ",
+      'Implementation of a complete, responsive Web application using React. Authentication and user profile management with Redux, using data from a local "MongoDB". Advice on setting up API endpoints for viewing transactions.',
   };
 
   const mutliText = {
