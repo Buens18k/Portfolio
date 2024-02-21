@@ -1,5 +1,6 @@
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 //
 const MenuItems: React.FC<{ isMenuOpen: boolean; toggleMenu: () => void }> = ({ isMenuOpen, toggleMenu }) => (
@@ -18,24 +19,24 @@ const MenuItems: React.FC<{ isMenuOpen: boolean; toggleMenu: () => void }> = ({ 
       </li>
     )}
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <a href="#skills" className="text-2xl hover:underline duration-100">
+      <Link href="/#skills" className="text-2xl hover:underline duration-100">
         Skills
-      </a>
+      </Link>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <a href="#projects" className="text-2xl hover:underline duration-100">
+      <Link href="/#projects" className="text-2xl hover:underline duration-100">
         Projects
-      </a>
+      </Link>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <a href="/about" className="text-2xl hover:underline duration-100">
+      <Link href="/about" className="text-2xl hover:underline duration-100">
         About
-      </a>
+      </Link>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <a href="" className="text-2xl hover:underline duration-100">
+      <Link href="" className="text-2xl hover:underline duration-100">
         Dev JV
-      </a>
+      </Link>
     </li>
   </ul>
 );

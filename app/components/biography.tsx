@@ -1,11 +1,7 @@
-interface MultilineText {
-  lines: string[];
-}
-
 interface biographyProps {
   name: string;
   trade: string;
-  text: MultilineText;
+  text: string;
 }
 
 function Biography({ name, trade, text }: biographyProps) {
@@ -24,11 +20,9 @@ function Biography({ name, trade, text }: biographyProps) {
         <br />
       </h2>
       <p className="flex flex-col justify-center md:justify-start text-center text-xl md:text-left items-center md:items-start text-wrap gap-2 md:text-2xl">
-        {text.lines.map((line, index) => (
-          <span className="flex text-xl justify-center items-center md:items-start" key={index}>
-            {line} <br />
-          </span>
-        ))}
+        <span className="flex text-xl xl:text-2xl justify-center items-center md:items-start">
+          {text} <br />
+        </span>
       </p>
     </div>
   );

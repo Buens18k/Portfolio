@@ -1,0 +1,13 @@
+{
+  "userName": {
+    "name": "Bruno Vang"
+  },
+  "mutliText": {
+    "lines": "\"My passion lies in creating user experiences using innovative web technologies and modern development practices to create interactive, responsive, and aesthetically pleasing user interfaces.\""
+  },
+  "textProject": {
+    "js": " \"PortFolio de Sophie Bluel\", Architect. Made using the JavaScript language. Using various functionalities and communicating with dynamic data from an API. Integration based on Figma model slicing.",
+    "reactJS": "Redesign of the apartment rental website, realized with the full JavaScript stack, using React on the front-end. Project built with the \"VITE\" tool, integrating React Router, React hooks for local state and lifecycle management, as well as the use of the \"SASS\" preprocessor to elaborate animations.",
+    "reactRedux": "Implementation of a complete, responsive Web application using React. Authentication and user profile management with Redux, using data from a local \"MongoDB\". Advice on setting up API endpoints for viewing transactions."
+  }
+}
