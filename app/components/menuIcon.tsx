@@ -8,7 +8,7 @@ interface MenuIconProps {
 
 const MenuIcon = ({ isMenuOpen, toggleMenu }: MenuIconProps) => {
   return (
-    <button className="absolute right-7 top-10 text-5xl md:hidden" onClick={toggleMenu} aria-label="Toggle Menu" type="button">
+    <button className="absolute right-7 top-7 text-5xl md:hidden" onClick={toggleMenu} aria-label="Toggle Menu" type="button">
       <FontAwesomeIcon icon={faBars} />
     </button>
   );
