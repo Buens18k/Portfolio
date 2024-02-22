@@ -8,8 +8,27 @@ import './globals.css';
 // const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://portfolio-idauu3o96-buens18ks-projects.vercel.app/'),
   title: 'Portfolio de Bruno Vang',
   description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
+  openGraph: {
+    title: 'Portfolio de Bruno Vang',
+    description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
+    images: [
+      {
+        url: '/app/favicon.ico',
+        width: '800',
+        height: '600',
+        alt: 'icon Buens 18k',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Portfolio de Bruno Vang',
+    description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
+    images: ['/app/favicon.ico'],
+  },
 };
 
 export default function RootLayout({

@@ -20,7 +20,7 @@ function Header() {
       <nav className=" md:flex md:items-center md:justify-between">
         <div className="flex justify-between items-center">
           {/* Utilisation du composant réutilisable 'Logo' et de ces props typés */}
-          <Logo src="LogoDiams.webp" alt="Logo Diamant Buens" className="w-20 lg:w-28" priority={true} width={64} height={64} />
+          <Logo src="LogoDiams.webp" alt="Logo Diamant Buens" className="w-20 lg:w-28" priority width={500} height={500} />
           {/* Utilisation du composant 'MenuIcon' et de ces props définit dans une interface*/}
           <MenuIcon isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
         </div>
