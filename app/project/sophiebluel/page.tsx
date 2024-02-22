@@ -40,17 +40,69 @@ function Project() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center gap-3">
-        <h3 className="underline">Home Page</h3>
+      <section className="flex flex-col gap-3">
+        <div className="flex justify-center">
+          <h3 className="underline">Page d&apos;accueil.</h3>
+        </div>
         <PictureProject src="p6.webp" alt="Photo de Sophie Bluel" />
-        <div className="flex flex-col">
-          <ul className="flex flex-col items-start list-disc">
-            <li>Récuparation des travaux depuis le back-end.</li>
-            <li>Possibilité de filtrer la galerie par catégorie de projet.</li>
+        <ul className="flex flex-col items-start list-disc">
+          <li>Récuparation des travaux depuis le back-end.</li>
+          <li>Possibilité de filtrer la galerie par catégorie de projet.</li>
+        </ul>
+      </section>
+      <section className="flex flex-col gap-3">
+        <div className="flex justify-center">
+          <h3 className="underline">Page d&apos;authentification.</h3>
+        </div>
+        <PictureProject src="loginBluel.webp" alt="Photo de Sophie Bluel" />
+        <ul className="flex flex-col justify-start items-start list-disc">
+          <li>Conformité du design.</li>
+          <li>Requête de type &quot; POST &quot; soumettant le formulaire.</li>
+          <li>Gestion des réponses de l&apos;API.</li>
+          <li>Enregistrement du &quot; JWT &quot; dans le Local Storage.</li>
+          <li>Redirection vers la page &quot; Mode Édition &quot;.</li>
+        </ul>
+      </section>
+      <section className="flex flex-col gap-3">
+        <div className="flex justify-center">
+          <h3 className="underline">Page Mode Édition.</h3>
+        </div>
+        <PictureProject src="authBluel.webp" alt="Photo de Sophie Bluel" />
+        <div>
+          <ul className="flex flex-col justify-start items-start list-disc">
+            <li>Manipulation du DOM.</li>
+            <li>Conformité du design.</li>
+            <li>Déconnexion de l&apos;utilisateur.</li>
           </ul>
         </div>
       </section>
-      <section>
+      <section className="flex flex-col gap-3">
+        <div className="flex justify-center">
+          <h3 className="underline">Modale de suppression.</h3>
+        </div>
+        <PictureProject src="modalDelBluel.webp" alt="Photo de Sophie Bluel" />
+        <div>
+          <ul className="flex flex-col justify-start items-start list-disc">
+            <li>Création d&apos;une modale de suppression de travaux existant.</li>
+            <li>Requête de type &quot;DELETE&quot;.</li>
+            <li>Conformité du design.</li>
+          </ul>
+        </div>
+      </section>
+      <section className="flex flex-col gap-3">
+        <div className="flex justify-center">
+          <h3 className="underline">Modale d&apos;ajout d&apos;un nouveau projet.</h3>
+        </div>
+        <PictureProject src="modalAddBluel.webp" alt="Photo de Sophie Bluel" />
+        <div>
+          <ul className="flex flex-col justify-start items-start list-disc">
+            <li>Création d&apos;une modale de suppression de travaux existant.</li>
+            <li>Requête de type &quot;ADD&quot;.</li>
+            <li>Conformité du design.</li>
+          </ul>
+        </div>
+      </section>
+      <section className="flex flex-col items-center gap-3">
         <div>
           <ButtonContact src="/images/github.svg" buttonLink={{ title: 'Lien Repo', url: 'https://github.com/Buens18k/Projet6-ArchiWebos' }} />
         </div>
