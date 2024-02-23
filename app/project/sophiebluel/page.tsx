@@ -1,27 +1,27 @@
 import ButtonContact from '@/app/components/buttonContact';
 import Item from '@/app/components/projects/item';
-import MissingItems from '@/app/components/projects/missingItems';
-import PictureProject from '@/app/components/projects/picture';
+import Missing from '@/app/components/projects/missing';
 
 function Project() {
+  const missingItemData = [
+    { title: 'Mission', items: ['Page de présentaion des travaux', "Page de connexion de l'administrateur", 'Modale'] },
+    { title: 'Gestion & outil', items: ['Kanban', 'Figma'] },
+    { title: 'Language de programmation', items: ['JavaScript', 'CSS'] },
+  ];
+
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-20">
-      <section className="flex flex-col justify-center gap-7">
-        <h1 className="flex justify-center text-2xl font-bold underline">&quot; Agence ArchiWebos &quot;</h1>
-        <div className="flex flex-col items-center gap-4">
-          <div className="flex flex-col justify-center items-center">
-            <p className="flex font-semibold justify-center underline">&laquo; Sophie Bluel &raquo;, Architecte d&apos;intèrieur.</p>
-            <span className="text-sm">(Projet JavaScript avec OpenClassRoom)</span>
-          </div>
-          <PictureProject src="bluel.webp" alt="Photo de Sophie Bluel" />
-          <div className="flex flex-col gap-4">
-            <MissingItems title="Mission" items={['Page de présentaion des travaux', "Page de connexion de l'administrateur", 'Modale']} />
-            <MissingItems title="Gestion & outil" items={['Kanban', 'Figma']} />
-            <MissingItems title="Language de programmation" items={['JavaScript', 'CSS']} />
-          </div>
-        </div>
+      <section className="flex flex-col justify-center gap-7 bg-menu rounded-xl p-3">
+        <Missing
+          titleName="Agence ArchiWebos"
+          projectName="Sophie Bluel, Architecte d'intèrieur."
+          ssProjectName="Projet JavaScript avec OpenClassRoom"
+          src="bluel.webp"
+          alt="Photo de Sophie Bluel"
+          missingItems={missingItemData}
+        />
       </section>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
         <Item
           title="Page d'accueil."
           src="p6.webp"
@@ -29,7 +29,7 @@ function Project() {
           items={['Récuparation des travaux depuis le back-end.', 'Possibilité de filtrer la galerie par catégorie de projet.']}
         />
       </section>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
         <Item
           title="Page d'authentification."
           src="loginBluel.webp"
@@ -43,15 +43,15 @@ function Project() {
           ]}
         />
       </section>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
         <Item
           title="Page Mode Édition."
           src="authBluel.webp"
           alt="Photo de Sophie Bluel"
-          items={['Manipulation du DOM.', 'Conformité du design', "Déconnexion de l'utilisateur."]}
+          items={["Fonctionnalité avancer pour l'administrateur d'accéder à des fonctions.", 'Conformité du design', "Déconnexion de l'utilisateur."]}
         />
       </section>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
         <Item
           title="Modale de suppression."
           src="modalDelBluel.webp"
@@ -63,7 +63,7 @@ function Project() {
           ]}
         />
       </section>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
         <Item
           title="Modale d'ajout d'un nouveau projet."
           src="modalAddBluel.webp"
