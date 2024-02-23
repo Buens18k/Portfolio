@@ -1,4 +1,5 @@
 import ButtonContact from '@/app/components/buttonContact';
+import Item from '@/app/components/projects/item';
 import MissingItems from '@/app/components/projects/missingItems';
 import PictureProject from '@/app/components/projects/picture';
 
@@ -21,69 +22,59 @@ function Project() {
         </div>
       </section>
       <section className="flex flex-col gap-3">
-        <div className="flex justify-center">
-          <h3 className="font-semibold underline">Page d&apos;accueil.</h3>
-        </div>
-        <PictureProject src="p6.webp" alt="Photo de Sophie Bluel" />
-        <ul className="flex flex-col items-start list-disc">
-          <li>Récuparation des travaux depuis le back-end.</li>
-          <li>Possibilité de filtrer la galerie par catégorie de projet.</li>
-        </ul>
+        <Item
+          title="Page d'accueil."
+          src="p6.webp"
+          alt="Photo de Sophie Bluel"
+          items={['Récuparation des travaux depuis le back-end.', 'Possibilité de filtrer la galerie par catégorie de projet.']}
+        />
       </section>
       <section className="flex flex-col gap-3">
-        <div className="flex justify-center">
-          <h3 className="underline">Page d&apos;authentification.</h3>
-        </div>
-        <PictureProject src="loginBluel.webp" alt="Photo de Sophie Bluel" />
-        <ul className="flex flex-col justify-start items-start list-disc">
-          <li>Conformité du design.</li>
-          <li>Requête de type &quot; POST &quot; soumettant le formulaire.</li>
-          <li>Gestion des réponses de l&apos;API.</li>
-          <li>Enregistrement du &quot; JWT &quot; dans le Local Storage.</li>
-          <li>Redirection vers la page &quot; Mode Édition &quot;.</li>
-        </ul>
+        <Item
+          title="Page d'authentification."
+          src="loginBluel.webp"
+          alt="Photo de Sophie Bluel"
+          items={[
+            'Conformité du design.',
+            "Requête à l'API pour soumission du formulaire.",
+            "Gestion des réponses de l'API",
+            'Enregistrement du " JWT " dans le Local Storage.',
+            'Redirection vers la page " Mode Édition ".',
+          ]}
+        />
       </section>
       <section className="flex flex-col gap-3">
-        <div className="flex justify-center">
-          <h3 className="underline">Page Mode Édition.</h3>
-        </div>
-        <PictureProject src="authBluel.webp" alt="Photo de Sophie Bluel" />
-        <div>
-          <ul className="flex flex-col justify-start items-start list-disc">
-            <li>Manipulation du DOM.</li>
-            <li>Conformité du design.</li>
-            <li>Déconnexion de l&apos;utilisateur.</li>
-          </ul>
-        </div>
+        <Item
+          title="Page Mode Édition."
+          src="authBluel.webp"
+          alt="Photo de Sophie Bluel"
+          items={['Manipulation du DOM.', 'Conformité du design', "Déconnexion de l'utilisateur."]}
+        />
       </section>
       <section className="flex flex-col gap-3">
-        <div className="flex justify-center">
-          <h3 className="underline">Modale de suppression.</h3>
-        </div>
-        <PictureProject src="modalDelBluel.webp" alt="Photo de Sophie Bluel" />
-        <div>
-          <ul className="flex flex-col justify-start items-start list-disc">
-            <li>Création d&apos;une modale de suppression de travaux existant.</li>
-            <li>Affichage des travaux existant.</li>
-            <li>Fonctionnalité de suppression de travaux, en communiquant avec l&apos;API et en actualisant le DOM</li>
-          </ul>
-        </div>
+        <Item
+          title="Modale de suppression."
+          src="modalDelBluel.webp"
+          alt="Photo de Sophie Bluel"
+          items={[
+            "Création d'une modale de suppression de travaux existant.",
+            'Affichage des travaux existant.',
+            "Fonctionnalité de suppression de travaux, en communiquant avec l'API et en actualisant le DOM",
+          ]}
+        />
       </section>
       <section className="flex flex-col gap-3">
-        <div className="flex justify-center">
-          <h3 className="underline">Modale d&apos;ajout d&apos;un nouveau projet.</h3>
-        </div>
-        <PictureProject src="modalAddBluel.webp" alt="Photo de Sophie Bluel" />
-        <div>
-          <ul className="flex flex-col justify-start items-start list-disc">
-            <li>Création d&apos;une modale d&apos;ajout de travaux.</li>
-            <li>Message d&apos;erreur dans le cas d&apos;un mauvais remplissage du formulaire.</li>
-            <li>Envoie du nouveaux projet à l&apos;API en respectant la documentation</li>
-            <li>
-              Affichage du nouveaux projet dynamiquement dans le portfolio ainsi que dans la modale de suppression sans rechargement de la page Web.
-            </li>
-          </ul>
-        </div>
+        <Item
+          title="Modale d'ajout d'un nouveau projet."
+          src="modalAddBluel.webp"
+          alt="Photo de Sophie Bluel"
+          items={[
+            "Création d&apos;une modale d'ajout de travaux.",
+            "Message d'erreur dans le cas d'un mauvais remplissage du formulaire.",
+            "Envoie du nouveaux projet à l'API en respectant la documentation.",
+            'Affichage du nouveaux projet dynamiquement dans le portfolio ainsi que dans la modale de suppression sans rechargement de la page Web.',
+          ]}
+        />
       </section>
       <section className="flex flex-col items-center gap-3">
         <div>
