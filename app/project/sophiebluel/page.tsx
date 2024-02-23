@@ -11,7 +11,7 @@ function Project() {
 
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-20">
-      <section className="flex flex-col justify-center gap-7 bg-menu rounded-xl p-3">
+      <section className="flex flex-col justify-center gap-7 lg:gap-14 bg-menu rounded-xl p-3">
         <Missing
           titleName="Agence ArchiWebos"
           projectName="Sophie Bluel, Architecte d'intèrieur."

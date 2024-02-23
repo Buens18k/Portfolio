@@ -5,16 +5,16 @@ interface PictureProps {
 }
 function PictureProject({ src, alt }: PictureProps) {
   return (
-    <div className="relative overflow-hidden group rounded-3xl">
+    <div className="relative overflow-hidden group rounded-xl">
       <Image
-        className="flex object-cover rounded-3xl w-full h-auto transition-transform duration-300 transform-gpu group-hover:scale-125"
+        className="flex object-cover rounded-xl w-full md:w-96 max-w-96 h-auto transition-transform duration-300 transform-gpu group-hover:scale-125"
         src={`/images/projects/${src}`}
         alt={alt}
         priority
-        width={250}
-        height={250}
+        width={500}
+        height={500}
       />
-      <div className="absolute rounded-3xl inset-0 bg-white bg-opacity-0 hover:bg-opacity-25 transition-opacity duration-300"></div>
+      <div className="absolute rounded-xl inset-0 bg-black-50 bg-opacity-0 hover:bg-opacity-25 transition-opacity duration-300"></div>
     </div>
   );
 }
