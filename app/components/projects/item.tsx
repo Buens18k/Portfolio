@@ -5,21 +5,22 @@ interface itemProps {
   src: string;
   alt: string;
   items: string[];
+  layout?: 'flex-row' | 'flex-row-reverse';
 }
 
-function Item({ title, src, alt, items }: itemProps) {
+function Item({ title, src, alt, items, layout = 'flex-row' }: itemProps) {
   return (
     <>
-      {/* <div className="flex justify-center"> */}
       <h3 className="flex justify-center font-semibold underline">{title}</h3>
-      {/* </div> */}
-      <PictureProject src={src} alt={alt} />
-      <div className="flex flex-col justify-center">
-        <ul className="flex flex-col items-start list-disc">
-          {items.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
+      <div className={`flex flex-col lg:${layout} lg:justify-around  gap-5 md:gap-10`}>
+        <PictureProject src={src} alt={alt} />
+        <div className="flex flex-col justify-center lg:max-w-96">
+          <ul className="flex flex-col items-start list-disc">
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );

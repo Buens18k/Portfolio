@@ -27,6 +27,7 @@ function Project() {
           src="p6.webp"
           alt="Photo de Sophie Bluel"
           items={['Récuparation des travaux depuis le back-end.', 'Possibilité de filtrer la galerie par catégorie de projet.']}
+          layout="flex-row-reverse"
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
@@ -49,6 +50,7 @@ function Project() {
           src="authBluel.webp"
           alt="Photo de Sophie Bluel"
           items={["Fonctionnalité avancer pour l'administrateur d'accéder à des fonctions.", 'Conformité du design', "Déconnexion de l'utilisateur."]}
+          layout="flex-row-reverse"
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
@@ -74,6 +76,7 @@ function Project() {
             "Envoie du nouveaux projet à l'API en respectant la documentation.",
             'Affichage du nouveaux projet dynamiquement dans le portfolio ainsi que dans la modale de suppression sans rechargement de la page Web.',
           ]}
+          layout="flex-row-reverse"
         />
       </section>
       <section className="flex flex-col items-center gap-3">

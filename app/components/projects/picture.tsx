@@ -14,7 +14,7 @@ function PictureProject({ src, alt }: PictureProps) {
         width={500}
         height={500}
       />
-      <div className="absolute rounded-xl inset-0 bg-black-50 bg-opacity-0 hover:bg-opacity-25 transition-opacity duration-300"></div>
+      <div className="absolute object-cover rounded-xl inset-0 bg-black-50 bg-opacity-0 hover:bg-opacity-25 transition-opacity duration-300"></div>
     </div>
   );
 }
