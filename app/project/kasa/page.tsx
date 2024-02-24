@@ -14,7 +14,7 @@ function Project() {
       <section className="flex flex-col justify-center gap-7 lg:gap-14 bg-menu rounded-xl p-3">
         <Missing
           titleName="Kasa"
-          projectName="Agence de location d'appartement"
+          projectName="Application Web de Location immobilière"
           ssProjectName="Projet React avec OpenClassRoom"
           src="logoKasa.webp"
           alt="Logo Kasa"
