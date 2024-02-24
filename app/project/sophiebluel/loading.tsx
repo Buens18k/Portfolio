@@ -1,7 +1,7 @@
 type Props = {};
 
-function loading({}: Props) {
-  return <div>loading Page Project</div>;
+function Loading({}: Props) {
+  return <div>Loading Page Project</div>;
 }
 
-export default loading;
+export default Loading;

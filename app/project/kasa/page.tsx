@@ -4,90 +4,72 @@ import Missing from '@/app/components/projects/missing';
 
 function Project() {
   const missingItemData = [
-    { title: 'Mission', items: ['Page de présentaion des travaux', "Page de connexion de l'administrateur", 'Modale'] },
-    { title: 'Gestion & outil', items: ['Kanban', 'Figma'] },
-    { title: 'Language de programmation', items: ['JavaScript', 'CSS'] },
+    { title: 'Mission', items: ['Home Page', 'House Page', 'About Page', 'Error Page', 'Conformité Design'] },
+    { title: 'Gestion & outils', items: ['Figma', 'Coding guidelines'] },
+    { title: 'Language de programmation', items: ['ReactJs', 'SCSS'] },
   ];
 
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-20">
       <section className="flex flex-col justify-center gap-7 lg:gap-14 bg-menu rounded-xl p-3">
         <Missing
-          titleName="Project Kasa"
-          projectName="Sophie Bluel, Architecte d'intèrieur."
-          ssProjectName="Projet JavaScript avec OpenClassRoom"
-          src="bluel.webp"
-          alt="Photo de Sophie Bluel"
+          titleName="Kasa"
+          projectName="Agence de location d'appartement"
+          ssProjectName="Projet React avec OpenClassRoom"
+          src="logoKasa.webp"
+          alt="Logo Kasa"
           missingItems={missingItemData}
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
         <Item
-          title="Page d'accueil."
-          src="p6.webp"
-          alt="Photo de Sophie Bluel"
+          title="Home Page"
+          src="p8.webp"
+          alt="Image Page d'accueil"
           items={[
-            'Conformité du design.',
-            'Récuparation des travaux depuis le back-end.',
-            'Possibilité de filtrer la galerie par catégorie de projet.',
+            'Composant Banner et Card.',
+            'Récupération des données depuis le fichier JSON.',
+            'Logique de routage.',
+            'Ajout effet visuel sur les cartes.',
           ]}
           layout="flex-row-reverse"
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
         <Item
-          title="Page d'authentification."
-          src="loginBluel.webp"
+          title="House Page"
+          src="housePageKasa.webp"
           alt="Photo de Sophie Bluel"
           items={[
-            'Conformité du design.',
-            "Requête à l'API pour soumission du formulaire.",
-            "Gestion des réponses de l'API",
-            'Enregistrement du " JWT " dans le Local Storage.',
-            'Redirection vers la page " Mode Édition ".',
+            'URL correspondant au logement.',
+            'Composant "Carrousel".',
+            'Composant "Information" avec propriétés du logement en question.',
+            "Redirection vers la page Erreur en cas d'id incorrect.",
           ]}
           layout="flex-row"
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
         <Item
-          title="Page Mode Édition."
-          src="authBluel.webp"
-          alt="Photo de Sophie Bluel"
-          items={["Fonctionnalité avancer pour l'administrateur d'accéder à des fonctions.", 'Conformité du design', "Déconnexion de l'utilisateur."]}
+          title="About Page."
+          src="aboutPageKasa.webp"
+          alt="Image About Page"
+          items={['Composant "Accordion" réutilisable.', 'Définition du contenue personnalisé par les props.']}
           layout="flex-row-reverse"
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
         <Item
-          title="Modale de suppression."
-          src="modalDelBluel.webp"
-          alt="Photo de Sophie Bluel"
-          items={[
-            "Création d'une modale de suppression de travaux existant.",
-            'Affichage des travaux existant.',
-            "Fonctionnalité de suppression de travaux, en communiquant avec l'API et en actualisant le DOM",
-          ]}
+          title="Error Page."
+          src="errorPageKasa.webp"
+          alt="Image Error Page"
+          items={["Définie à la base du router en tant qu'erreur élément."]}
           layout="flex-row"
-        />
-      </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Modale d'ajout d'un nouveau projet."
-          src="modalAddBluel.webp"
-          alt="Photo de Sophie Bluel"
-          items={[
-            "Création d&apos;une modale d'ajout de travaux.",
-            "Message d'erreur dans le cas d'un mauvais remplissage du formulaire.",
-            "Envoie du nouveaux projet à l'API en respectant la documentation.",
-            'Affichage du nouveaux projet dynamiquement dans le portfolio ainsi que dans la modale de suppression sans rechargement de la page Web.',
-          ]}
-          layout="flex-row-reverse"
         />
       </section>
       <section className="flex flex-col items-center gap-3 ">
         <div>
-          <ButtonContact src="/images/github.svg" buttonLink={{ title: 'Lien Repo', url: 'https://github.com/Buens18k/Projet6-ArchiWebos' }} />
+          <ButtonContact src="/images/github.svg" buttonLink={{ title: 'Lien Repo', url: 'https://github.com/Buens18k/projet-kasa' }} />
         </div>
       </section>
     </main>

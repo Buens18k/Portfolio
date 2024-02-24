@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 // import { Inter } from 'next/font/google';
-import { elsie } from './components/font';
+import { hmong } from './components/font';
 import Footer from './components/footer';
 import Header from './components/header';
 import './globals.css';
@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-background max-w-screen-2xl m-auto text-text ${elsie.className}`}>
+      <body className={`bg-background max-w-screen-2xl m-auto text-text ${hmong.className}`}>
         <Header />
         {children}
         <Footer />

@@ -11,7 +11,7 @@ export default function Home() {
       <section className="flex flex-col gap-5 justify-center md:justify-between items-center md:flex-row w-full">
         <Banner src="moi.webp" alt="Photo Profil de Bruno" />
         <div className=" flex flex-col gap-8 md:w-7/12 lg:w-2/3">
-          <Biography name={data.userName.name} trade="Developeur Front-end" text={data.mutliText.lines} />
+          <Biography name={data.userName.name} trade="Developer Front-end" text={data.mutliText.lines} />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
             <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
