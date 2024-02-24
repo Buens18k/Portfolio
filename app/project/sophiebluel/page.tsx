@@ -21,20 +21,24 @@ function Project() {
           missingItems={missingItemData}
         />
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
         <Item
           title="Page d'accueil."
           src="p6.webp"
-          alt="Photo de Sophie Bluel"
-          items={['Récuparation des travaux depuis le back-end.', 'Possibilité de filtrer la galerie par catégorie de projet.']}
-          layout="flex-row-reverse"
+          alt="Image Page d'accueil"
+          items={[
+            'Conformité du design.',
+            'Récuparation des travaux depuis le back-end.',
+            'Possibilité de filtrer la galerie par catégorie de projet.',
+          ]}
+          layout="flex-row"
         />
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
         <Item
           title="Page d'authentification."
           src="loginBluel.webp"
-          alt="Photo de Sophie Bluel"
+          alt="Image page d'authentification"
           items={[
             'Conformité du design.',
             "Requête à l'API pour soumission du formulaire.",
@@ -42,44 +46,46 @@ function Project() {
             'Enregistrement du " JWT " dans le Local Storage.',
             'Redirection vers la page " Mode Édition ".',
           ]}
-        />
-      </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
-        <Item
-          title="Page Mode Édition."
-          src="authBluel.webp"
-          alt="Photo de Sophie Bluel"
-          items={["Fonctionnalité avancer pour l'administrateur d'accéder à des fonctions.", 'Conformité du design', "Déconnexion de l'utilisateur."]}
           layout="flex-row-reverse"
         />
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
+        <Item
+          title="Page Mode Édition."
+          src="authBluel.webp"
+          alt="Image page mode édition"
+          items={["Fonctionnalité avancer pour l'administrateur d'accéder à des fonctions.", 'Conformité du design', "Déconnexion de l'utilisateur."]}
+          layout="flex-row"
+        />
+      </section>
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
         <Item
           title="Modale de suppression."
           src="modalDelBluel.webp"
-          alt="Photo de Sophie Bluel"
+          alt="Image modale de suppression"
           items={[
             "Création d'une modale de suppression de travaux existant.",
             'Affichage des travaux existant.',
             "Fonctionnalité de suppression de travaux, en communiquant avec l'API et en actualisant le DOM",
           ]}
+          layout="flex-row-reverse"
         />
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3">
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
         <Item
           title="Modale d'ajout d'un nouveau projet."
           src="modalAddBluel.webp"
-          alt="Photo de Sophie Bluel"
+          alt="Image modale d'ajout"
           items={[
             "Création d&apos;une modale d'ajout de travaux.",
             "Message d'erreur dans le cas d'un mauvais remplissage du formulaire.",
             "Envoie du nouveaux projet à l'API en respectant la documentation.",
             'Affichage du nouveaux projet dynamiquement dans le portfolio ainsi que dans la modale de suppression sans rechargement de la page Web.',
           ]}
-          layout="flex-row-reverse"
+          layout="flex-row"
         />
       </section>
-      <section className="flex flex-col items-center gap-3">
+      <section className="flex flex-col items-center gap-3 ">
         <div>
           <ButtonContact src="/images/github.svg" buttonLink={{ title: 'Lien Repo', url: 'https://github.com/Buens18k/Projet6-ArchiWebos' }} />
         </div>
