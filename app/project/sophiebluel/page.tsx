@@ -1,6 +1,11 @@
 import ButtonContact from '@/app/components/buttonContact';
-import Item from '@/app/components/projects/item';
+import ItemProject from '@/app/components/projects/itemProject';
 import Missing from '@/app/components/projects/missing';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Project Sophie Bluel',
+};
 
 function Project() {
   const missingItemData = [
@@ -8,6 +13,14 @@ function Project() {
     { title: 'Gestion & outil', items: ['Kanban', 'Figma'] },
     { title: 'Language de programmation', items: ['JavaScript', 'CSS'] },
   ];
+
+  const titleItemProject = {
+    title1: "Page d'accueil",
+    title2: "Page d'authentification",
+    title3: 'Page Mode Édition',
+    title4: 'Modale de suppression',
+    title5: "Modale d'ajout d'un nouveau projet",
+  };
 
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-20">
@@ -21,69 +34,61 @@ function Project() {
           missingItems={missingItemData}
         />
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
-        <Item
-          title="Page d'accueil."
-          src="p6.webp"
-          alt="Image Page d'accueil"
-          items={[
-            'Conformité du design.',
-            'Récuparation des travaux depuis le back-end.',
-            'Possibilité de filtrer la galerie par catégorie de projet.',
-          ]}
-          layout="flex-row"
-        />
+      <section className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title1}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row lg:justify-around">
+          <ItemProject
+            src="p6.webp"
+            alt="Image Page d'accueil"
+            items={['Conformité du design.', 'Récuparation des travaux depuis le back-end.', 'Filtrage galerie par catégorie de projet.']}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Page d'authentification."
-          src="loginBluel.webp"
-          alt="Image page d'authentification"
-          items={[
-            'Conformité du design.',
-            "Requête à l'API pour soumission du formulaire.",
-            "Gestion des réponses de l'API",
-            'Enregistrement du " JWT " dans le Local Storage.',
-            'Redirection vers la page " Mode Édition ".',
-          ]}
-          layout="flex-row-reverse"
-        />
+      <section className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title2}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row-reverse lg:justify-around">
+          <ItemProject
+            src="loginBluel.webp"
+            alt="Image page d'authentification"
+            items={[
+              'Conformité du design.',
+              'Requête de soumission du formulaire.',
+              "Gestion des réponses de l'API",
+              'Register " JWT " in the Local Storage.',
+              'Redirection vers la page " Mode Édition ".',
+            ]}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Page Mode Édition."
-          src="authBluel.webp"
-          alt="Image page mode édition"
-          items={["Fonctionnalité avancer pour l'administrateur d'accéder à des fonctions.", 'Conformité du design', "Déconnexion de l'utilisateur."]}
-          layout="flex-row"
-        />
+      <section className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title3}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row lg:justify-around">
+          <ItemProject
+            src="authBluel.webp"
+            alt="Image page mode édition"
+            items={["Fonction avancée pour l'admnistrateur.", "Affichage d'une Modale depuis un button", "Déconnexion de l'utilisateur."]}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Modale de suppression."
-          src="modalDelBluel.webp"
-          alt="Image modale de suppression"
-          items={[
-            "Création d'une modale de suppression de travaux existant.",
-            'Affichage des travaux existant.',
-            "Fonctionnalité de suppression de travaux, en communiquant avec l'API et en actualisant le DOM",
-          ]}
-          layout="flex-row-reverse"
-        />
+      <section className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title4}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row-reverse lg:justify-around">
+          <ItemProject
+            src="modalDelBluel.webp"
+            alt="Image modale de suppression"
+            items={['Affichage des travaux existant.', 'Requête API "DELETE" travaux existant.', 'MAJ en temps réel "galerie" et "modale".']}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Modale d'ajout d'un nouveau projet."
-          src="modalAddBluel.webp"
-          alt="Image modale d'ajout"
-          items={[
-            "Création d&apos;une modale d'ajout de travaux.",
-            "Message d'erreur dans le cas d'un mauvais remplissage du formulaire.",
-            "Envoie du nouveaux projet à l'API en respectant la documentation.",
-            'Affichage du nouveaux projet dynamiquement dans le portfolio ainsi que dans la modale de suppression sans rechargement de la page Web.',
-          ]}
-          layout="flex-row"
-        />
+      <section className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title5}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row lg:justify-around">
+          <ItemProject
+            src="modalAddBluel.webp"
+            alt="Image modale d'ajout"
+            items={["Formulaire d'ajout projet.", 'Requête API "POST" un nouveaux projet.', 'Gestion erreur.', 'MAJ en temp réel "portfolio".']}
+          />
+        </div>
       </section>
       <section className="flex flex-col items-center gap-3 ">
         <div>
