@@ -1,21 +1,23 @@
 import ButtonContact from '@/app/components/buttonContact';
-import Item from '@/app/components/projects/item';
+import ItemProject from '@/app/components/projects/itemProject';
 import Missing from '@/app/components/projects/missing';
 
 function Project() {
   const missingItemData = [
     {
       title: 'Mission',
-      items: [
-        'Mettre en place le front-end',
-        'Créer les Pages correspondants aux wireframes',
-        "Authentification d'un utilisateur",
-        'Personnalisation du nom utilsateur',
-      ],
+      items: ['Mettre en place le front-end', 'Conformité wireframes', "Authentification d'un utilisateur", 'Personnalisation du nom utilsateur'],
     },
     { title: 'Gestion & outils', items: ['Figma', 'Coding guidelines'] },
     { title: 'Language de programmation', items: ['ReactJs', 'SCSS', 'Redux', 'MongoDB'] },
   ];
+
+  const titleItemProject = {
+    title1: 'Home Page',
+    title2: 'Login Page',
+    title3: 'Account User Page',
+    title4: 'Edit Page',
+  };
 
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-20">
@@ -30,53 +32,57 @@ function Project() {
         />
       </section>
       <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
-        <Item
-          title="Home Page"
-          src="p11.webp"
-          alt="Image Page d'accueil"
-          items={['Composant "Hero".', 'Composant réutilisable "FeatureItems".', 'Logique de routage.']}
-          layout="flex-row"
-        />
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title1}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row lg:justify-around">
+          <ItemProject
+            src="p11.webp"
+            alt="Image Page d'accueil"
+            items={['Composant "Hero".', 'Composant réutilisable "FeatureItems".', 'Logique de routage.']}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Login Page"
-          src="loginPageArgentBank.webp"
-          alt="Image Login Page"
-          items={[
-            "Formulaire d'authentification.",
-            "Requête vers l'API pour authentification.",
-            'Enregistrement du Token dans le LocalStorage et le Redux Store "auth".',
-            "Le store gérant l'authentification et la deconnexion.",
-          ]}
-          layout="flex-row-reverse"
-        />
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title2}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row-reverse lg:justify-around">
+          <ItemProject
+            src="loginPageArgentBank.webp"
+            alt="Image Login Page"
+            items={[
+              "Formulaire d'authentification.",
+              'Requête API "POST" pour authentification.',
+              'Stockage du "JWT" dans le LocalStorage.',
+              'Redux store "auth" gèrant l\nauthentification.',
+            ]}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Account Page User"
-          src="accountPageArgentBank.webp"
-          alt="Image Account Page User"
-          items={[
-            "Récupération des informations de l'utilisateur depuis le l'API.",
-            'Stockage et récupération des informations dans le Redux Store "User".',
-            'Composant "Account" réutilisable.',
-          ]}
-          layout="flex-row"
-        />
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title3}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row lg:justify-around">
+          <ItemProject
+            src="accountPageArgentBank.webp"
+            alt="Image Account Page User"
+            items={[
+              "Récupère les informations du User depuis le l'API.",
+              'MAJ des informations dans le Redux Store "User".',
+              'Composant "Account" réutilisable.',
+            ]}
+          />
+        </div>
       </section>
-      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:gap-12">
-        <Item
-          title="Edit User Name"
-          src="accountPageEditNameArgentBank.webp"
-          alt="Image formulaire d'édition du nom utilisateur depuis la Page Account"
-          items={[
-            'Personnalisation seulement du nom utilisateur.',
-            'Sauvegarder ou annuler la modification en cours.',
-            'En cas de sauvegarde du nom utilisateur modifier, mise à jour de la base de donnée et du nom utilisateur dans le Redux Store " user." ',
-          ]}
-          layout="flex-row-reverse"
-        />
+      <section className="flex flex-col gap-3 bg-menu rounded-xl p-3 lg:p-10 lg:gap-12">
+        <h3 className="flex justify-center font-semibold lg:text-2xl underline">{titleItemProject.title4}</h3>
+        <div className="flex flex-col gap-5 lg:flex-row-reverse lg:justify-around">
+          <ItemProject
+            src="accountPageEditNameArgentBank.webp"
+            alt="Image formulaire d'édition du nom utilisateur depuis la Page Account"
+            items={[
+              'Personnalisation seulement du nom utilisateur.',
+              'Sauvegarder ou annuler la modification en cours.',
+              'MAJ BDD et Store Redux en conséquence.',
+            ]}
+          />
+        </div>
       </section>
       <section className="flex flex-col items-center gap-3 ">
         <div>
