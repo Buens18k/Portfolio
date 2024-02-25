@@ -9,7 +9,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfolio-idauu3o96-buens18ks-projects.vercel.app/'),
-  title: 'Portfolio de Bruno Vang',
+  title: {
+    absolute: '',
+    default: 'Portfolio de Bruno Vang',
+    template: '%s - Portfolio de Bruno Vang',
+  },
   description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
   openGraph: {
     type: 'website',

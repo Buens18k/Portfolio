@@ -1,6 +1,11 @@
 import ButtonContact from '@/app/components/buttonContact';
 import ItemProject from '@/app/components/projects/itemProject';
 import Missing from '@/app/components/projects/missing';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Project Sophie Bluel',
+};
 
 function Project() {
   const missingItemData = [
