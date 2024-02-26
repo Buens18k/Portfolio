@@ -23,7 +23,14 @@ export default function Missing({ titleName, projectName, ssProjectName, src, al
           <span className="flex justify-center text-sm md:text-base lg:text-xl">{`(${ssProjectName})`}</span>
         </div>
         <div className="flex justify-center">
-          <Image className="object-contain rounded-xl w-auto h-auto" src={`/images/projects/${src}`} alt={alt} priority width={5000} height={5000} />
+          <Image
+            className="object-contain rounded-xl w-auto h-auto"
+            src={`/images/projects/${src}`}
+            alt={alt}
+            loading="lazy"
+            width={5000}
+            height={5000}
+          />
         </div>
         <div className="flex flex-col md:flex-row md:justify-around gap-4 flex-wrap content-center">
           {missingItems.map((missingItem, index) => (

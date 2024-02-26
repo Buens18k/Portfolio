@@ -10,7 +10,7 @@ function PictureProject({ src, alt }: PictureProps) {
         className="flex object-cover rounded-xl w-full md:w-96 max-w-96 h-auto transition-transform duration-300 transform-gpu group-hover:scale-125 cursor-pointer"
         src={`/images/projects/${src}`}
         alt={alt}
-        priority
+        loading="lazy"
         width={500}
         height={500}
       />
