@@ -2,7 +2,6 @@ import Image from 'next/image';
 import data from '../../lib/dataAbout.json';
 
 function About() {
-  console.log('aboutData', data);
   return (
     <main className="flex justify-center gap-3">
       <div className="flex flex-col justify-center items-center p-7 gap-10">
