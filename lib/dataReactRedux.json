@@ -1,0 +1,81 @@
+{
+  "title": "ArgentBank",
+  "projectName": "Implémentation du Front-end pour une application Bancaire",
+  "sstitle": "Projet React/Redux avec OpenClassRoom",
+  "src": "argentBankLogo.webp",
+  "alt": "Logo ArgentBank",
+  "missingItemReactRedux": [
+    {
+      "title": "Missions",
+      "items": ["Mettre en place le front-end", "Conformité wireframes", "Authentification d'un utilisateur", "Personnalisation du nom utilsateur"]
+    },
+    { "title": "Gestion & outils", "items": ["Figma", "Coding guidelines"] },
+    { "title": "Language de programmation", "items": ["ReactJs", "SASS", "Redux", "MongoDB"] }
+  ],
+
+  "sections": [
+    {
+      "title": "Home Page",
+      "itemProjects": [
+        {
+          "src": "p11.webp",
+          "alt": "Image Page d'accueil",
+          "items": ["Composant Hero.", "Composant réutilisable FeatureItems.", "Logique de routage."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Login Page",
+      "itemProjects": [
+        {
+          "src": "loginPageArgentBank.webp",
+          "alt": "Image Login Page",
+          "items": [
+            "Formulaire d'authentification.",
+            "Requête API POST pour authentification.",
+            "Stockage du JWT dans le LocalStorage.",
+            "Redux store auth gèrant l\nauthentification."
+          ],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Account User Page",
+      "itemProjects": [
+        {
+          "src": "accountPageArgentBank.webp",
+          "alt": "Image Account Page User",
+          "items": [
+            "Récupère les informations du User depuis le l'API.",
+            "MAJ des informations dans le Redux Store User.",
+            "Composant Account réutilisable."
+          ],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Edit Page",
+      "itemProjects": [
+        {
+          "src": "accountPageEditNameArgentBank.webp",
+          "alt": "Image formulaire d'édition du nom utilisateur depuis la Page Account",
+          "items": [
+            "Personnalisation seulement du nom utilisateur.",
+            "Sauvegarder ou annuler la modification en cours.",
+            "MAJ BDD et Store Redux en conséquence."
+          ],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    }
+  ],
+  "titleProjectReactRedux": {
+    "title1": "Home Page",
+    "title2": "Login Page",
+    "title3": "Account User Page",
+    "title4": "Edit Page"
+  }
+}

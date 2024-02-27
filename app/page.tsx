@@ -42,7 +42,7 @@ export default function Home() {
                 { src: 'typescript.svg', alt: 'logo TypeScript', skill: 'TypeScript' },
               ]}
             />
-            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'git & gitHub' }]} />
+            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'GitHub' }]} />
           </div>
         </div>
       </section>

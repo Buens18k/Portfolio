@@ -1,0 +1,63 @@
+{
+  "title": "Kasa",
+  "projectName": "Application Web de Location immobilière",
+  "sstitle": "Projet React avec OpenClassRoom",
+  "src": "logoKasa.webp",
+  "alt": "Logo Kasa",
+  "missingItemReact": [
+    { "title": "Mission", "items": ["Home Page", "House Page", "About Page", "Error Page", "Conformité Design"] },
+    { "title": "Gestion & outil", "items": ["Figma", "Coding guidelines"] },
+    { "title": "Language de programmation", "items": ["ReactJs", "SASS"] }
+  ],
+  "sections": [
+    {
+      "title": "Home Page",
+      "itemProjects": [
+        {
+          "src": "p8.webp",
+          "alt": "Image Home Page",
+          "items": [
+            "Composant Banner et Card.",
+            "Récupération des données depuis le fichier JSON.",
+            "Logique de routage.",
+            "Ajout effet visuel sur les cartes."
+          ],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "House Page",
+      "itemProjects": [
+        {
+          "src": "housePageKasa.webp",
+          "alt": "Image House Page",
+          "items": ["URL correspondant au logement.", "Composant Carrousel.", "Composant réutilisable avec Props du logement."],
+          "flexDirection": "row "
+        }
+      ]
+    },
+    {
+      "title": "About Page",
+      "itemProjects": [
+        {
+          "src": "aboutPageKasa.webp",
+          "alt": "Image About Page",
+          "items": ["Composant Accordion réutilisable.", "Personnalisation du contenue par les props."],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Error Page",
+      "itemProjects": [
+        {
+          "src": "errorPageKasa.webp",
+          "alt": "Image Error Page",
+          "items": ["Définie à la base du router en tant qu'erreur élément."],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    }
+  ]
+}

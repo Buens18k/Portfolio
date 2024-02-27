@@ -33,11 +33,11 @@ const MenuItems: React.FC<{ isMenuOpen: boolean; toggleMenu: () => void }> = ({ 
         About
       </Link>
     </li>
-    <li className="mx-4 my-5 md:my-0 cursor-pointer">
+    {/* <li className="mx-4 my-5 md:my-0 cursor-pointer">
       <Link href="" className="text-3xl hover:underline duration-100" target="blank">
         Dev JV
       </Link>
-    </li>
+    </li> */}
   </ul>
 );
 

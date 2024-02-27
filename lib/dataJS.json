@@ -1,0 +1,75 @@
+{
+  "title": "Agence ArchiWebos",
+  "projectName": "Sophie Bluel, Architecte d'intèrieur.",
+  "sstitle": "Projet JavaScript avec OpenClassRoom",
+  "src": "bluel.webp",
+  "alt": "Photo de Sophie BluelPhoto de Sophie Bluel",
+  "missingItemJS": [
+    { "title": "Mission", "items": ["Page de présentaion des travaux", "Page de connexion de l'administrateur", "Modale"] },
+    { "title": "Gestion & outil", "items": ["Kanban", "Figma"] },
+    { "title": "Language de programmation", "items": ["JavaScript", "CSS"] }
+  ],
+  "sections": [
+    {
+      "title": "Page d'accueil",
+      "itemProjects": [
+        {
+          "src": "p6.webp",
+          "alt": "Image Page d'accueil",
+          "items": ["Conformité du design.", "Récupération des travaux depuis le back-end.", "Filtrage galerie par catégorie de projet."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Page d'authentification",
+      "itemProjects": [
+        {
+          "src": "loginBluel.webp",
+          "alt": "Image Page d'authentification",
+          "items": [
+            "Conformité du design.",
+            "Requête de soumission du formulaire.",
+            "Gestion des réponses de l'API.",
+            "Register JWT in the Local Storage.",
+            "Redirection vers la page Mode Édition."
+          ],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Page Mode Édition",
+      "itemProjects": [
+        {
+          "src": "authBluel.webp",
+          "alt": "Image Page mode édition",
+          "items": ["Fonction avancée pour l'admnistrateur.", "Affichage d'une Modale depuis un button.", "Déconnexion de l'utilisateur."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Modale de suppression",
+      "itemProjects": [
+        {
+          "src": "modalDelBluel.webp",
+          "alt": "Image modale de suppression",
+          "items": ["Affichage des travaux existant.", "Requête API DELETE travaux existant", "MAJ en temps réel galerie et modale."],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Modale d'ajout d'un nouveau projet",
+      "itemProjects": [
+        {
+          "src": "modalAddBluel.webp",
+          "alt": "Image modale d'ajout",
+          "items": ["Formulaire d'ajout projet.", "Requête API POST un nouveaux projet", "Gestion erreur.", "MAJ en temps réel la galerie."],
+          "flexDirection": "row"
+        }
+      ]
+    }
+  ]
+}
