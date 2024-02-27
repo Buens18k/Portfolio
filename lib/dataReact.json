@@ -1,13 +1,13 @@
 {
   "title": "Kasa",
-  "projectName": "Application Web de Location immobilière",
-  "sstitle": "Projet React avec OpenClassRoom",
+  "projectName": "Real Estate Rental Web Application",
+  "sstitle": "React project with OpenClassRoom",
   "src": "logoKasa.webp",
   "alt": "Logo Kasa",
   "missingItemReact": [
-    { "title": "Mission", "items": ["Home Page", "House Page", "About Page", "Error Page", "Conformité Design"] },
-    { "title": "Gestion & outil", "items": ["Figma", "Coding guidelines"] },
-    { "title": "Language de programmation", "items": ["ReactJs", "SASS"] }
+    { "title": "Mission", "items": ["Home Page", "House Page", "About Page", "Error Page", "Design conformity"] },
+    { "title": "Management & tools", "items": ["Figma", "Coding guidelines"] },
+    { "title": "Programming language", "items": ["ReactJs", "SASS"] }
   ],
   "sections": [
     {
@@ -16,12 +16,7 @@
         {
           "src": "p8.webp",
           "alt": "Image Home Page",
-          "items": [
-            "Composant Banner et Card.",
-            "Récupération des données depuis le fichier JSON.",
-            "Logique de routage.",
-            "Ajout effet visuel sur les cartes."
-          ],
+          "items": ["Banner and Card components.", "Data retrieval from JSON file.", "Routing logic.", "Added visual effect on cards."],
           "flexDirection": "row-reverse"
         }
       ]
@@ -32,7 +27,7 @@
         {
           "src": "housePageKasa.webp",
           "alt": "Image House Page",
-          "items": ["URL correspondant au logement.", "Composant Carrousel.", "Composant réutilisable avec Props du logement."],
+          "items": ["URL corresponding to the accommodation.", "Carrousel component.", "Reusable component with housing data."],
           "flexDirection": "row "
         }
       ]
@@ -43,7 +38,7 @@
         {
           "src": "aboutPageKasa.webp",
           "alt": "Image About Page",
-          "items": ["Composant Accordion réutilisable.", "Personnalisation du contenue par les props."],
+          "items": ["Reusable Accordion component.", "Customization of content by props."],
           "flexDirection": "row-reverse"
         }
       ]
@@ -54,8 +49,8 @@
         {
           "src": "errorPageKasa.webp",
           "alt": "Image Error Page",
-          "items": ["Définie à la base du router en tant qu'erreur élément."],
-          "flexDirection": "row-reverse"
+          "items": ["Defined at the router base as an error element."],
+          "flexDirection": "row"
         }
       ]
     }

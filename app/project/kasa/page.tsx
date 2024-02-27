@@ -29,7 +29,10 @@ function Project() {
           <h3 className="flex justify-center font-semibold lg:text-2xl underline">{section.title}</h3>
           {/* Pour chaque item créer cette div avec sa class passé en paramètre */}
           {section.itemProjects.map((item, itemIndex) => (
-            <div key={itemIndex} className={`flex flex-col gap-5 lg:flex-${item.flexDirection} lg:justify-around justify-center items-center`}>
+            <div
+              key={itemIndex}
+              className={`flex flex-col gap-5 md:${item.flexDirection === 'row-reverse' ? 'flex-row-reverse' : 'flex-row'} md:justify-around`}
+            >
               <ItemProject src={item.src} alt={item.alt} items={item.items} />
             </div>
           ))}
