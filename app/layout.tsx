@@ -8,7 +8,6 @@ import './globals.css';
 // const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio-idauu3o96-buens18ks-projects.vercel.app/'),
   title: {
     absolute: '',
     default: 'Portfolio de Bruno Vang',
@@ -18,17 +17,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://portfolio-theta-seven-36.vercel.app/',
+    title: 'Portfolio de Bruno Vang',
+    siteName: 'Bruno Vang',
+    description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
     images: [
       {
         url: 'https://portfolio-theta-seven-36.vercel.app/images/moiPNG.webp',
       },
     ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    site: '@site',
-    creator: '@creator',
-    images: 'https://portfolio-theta-seven-36.vercel.app/images/moiPNG.webp',
   },
 };
 
