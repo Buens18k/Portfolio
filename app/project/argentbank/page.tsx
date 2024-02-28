@@ -31,7 +31,9 @@ function Project() {
           {section.itemProjects.map((item, itemIndex) => (
             <div
               key={itemIndex}
-              className={`flex flex-col gap-5 md:${item.flexDirection === 'row-reverse' ? 'flex-row-reverse' : 'flex-row'} md:justify-around`}
+              className={`flex flex-col items-center gap-5 ${
+                item.flexDirection === 'row-reverse' ? 'md:flex-row-reverse' : 'md:flex-row'
+              } md:justify-around`}
             >
               <ItemProject src={item.src} alt={item.alt} items={item.items} />
             </div>

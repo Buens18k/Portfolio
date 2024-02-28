@@ -20,7 +20,7 @@ export default function Missing({ titleName, projectName, ssProjectName, src, al
       <div className="flex flex-col gap-4 xl:gap-8">
         <div className="flex flex-col justify-center items-center">
           <p className="flex font-semibold justify-center underline md:text-xl lg:text-2xl">{projectName}</p>
-          <span className="flex justify-center text-sm md:text-base lg:text-xl">{`(${ssProjectName})`}</span>
+          <span className="flex text-center justify-center text-sm md:text-base lg:text-xl">{`(${ssProjectName})`}</span>
         </div>
         <div className="flex justify-center">
           <Image className="object-contain rounded-xl w-auto h-auto" src={`/images/projects/${src}`} alt={alt} priority width={5000} height={5000} />

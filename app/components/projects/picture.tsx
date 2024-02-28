@@ -5,9 +5,9 @@ interface PictureProps {
 }
 function PictureProject({ src, alt }: PictureProps) {
   return (
-    <div className="flex justify-center relative overflow-hidden group rounded-xl w-96 h-96">
+    <div className="flex justify-center relative overflow-hidden group rounded-xl">
       <Image
-        className="flex rounded-xl w-96 md:w-full max-w-96 h-auto transition-transform duration-300 transform-gpu group-hover:scale-125 cursor-pointer ease-in-out"
+        className="flex object-containt rounded-xl w-full md:w-full max-w-96 h-auto transition-transform duration-300 transform-gpu group-hover:scale-125 cursor-pointer ease-in-out"
         src={`/images/projects/${src}`}
         alt={alt}
         priority
