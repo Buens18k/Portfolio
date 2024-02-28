@@ -1,0 +1,75 @@
+{
+  "title": "Agency ArchiWebos",
+  "projectName": "Sophie Bluel, Interior Architect.",
+  "sstitle": "JavaScript project with OpenClassRoom",
+  "src": "bluel.webp",
+  "alt": "Photo by Sophie Bluel",
+  "missingItemJS": [
+    { "title": "Missions :", "items": ["Work presentation page", "Administrator login page", "Modal"] },
+    { "title": "Management & tools :", "items": ["Kanban", "Figma"] },
+    { "title": "Programming languages :", "items": ["JavaScript", "CSS"] }
+  ],
+  "sections": [
+    {
+      "title": "Home Page",
+      "itemProjects": [
+        {
+          "src": "p6.webp",
+          "alt": "Image Home Page",
+          "items": ["Design conformity.", "Recovery of jobs from the back-end.", "Gallery filtering by project category."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Authentication page",
+      "itemProjects": [
+        {
+          "src": "loginBluel.webp",
+          "alt": "Image Authentication page",
+          "items": [
+            "Design conformity.",
+            "Form submission request.",
+            "API response management.",
+            "Save JWT in local storage.",
+            "Redirects to Edit Mode page."
+          ],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Edit mode page",
+      "itemProjects": [
+        {
+          "src": "authBluel.webp",
+          "alt": "Image Edit mode page",
+          "items": ["Advanced function for the administrator.", "Modal display from a button.", "User logout."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Delete mode",
+      "itemProjects": [
+        {
+          "src": "modalDelBluel.webp",
+          "alt": "Image Delete mode",
+          "items": ["Display of existing work.", "API request DELETE existing work.", "Real-time gallery and modal updates."],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Modal for adding a new project",
+      "itemProjects": [
+        {
+          "src": "modalAddBluel.webp",
+          "alt": "Add modal image",
+          "items": ["Add project form.", "API POST request for a new project.", "Error management.", "Real-time update of the gallery."],
+          "flexDirection": "row"
+        }
+      ]
+    }
+  ]
+}

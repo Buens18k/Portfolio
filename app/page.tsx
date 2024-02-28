@@ -11,7 +11,7 @@ export default function Home() {
       <section className="flex flex-col gap-5 justify-center md:justify-between items-center md:flex-row w-full">
         <Banner src="moi.webp" alt="Photo Profil de Bruno" />
         <div className=" flex flex-col gap-8 md:w-7/12 lg:w-2/3">
-          <Biography name={data.userName.name} trade="Develloppeur Front-end" text={data.mutliText.lines} />
+          <Biography name={data.userName.name} trade="Developer Front-end" text={data.mutliText.lines} />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
             <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
@@ -42,7 +42,7 @@ export default function Home() {
                 { src: 'typescript.svg', alt: 'logo TypeScript', skill: 'TypeScript' },
               ]}
             />
-            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'git & gitHub' }]} />
+            <SkillsContent title="Other" skills={[{ src: 'github.svg', alt: 'logo git & github', skill: 'GitHub' }]} />
           </div>
         </div>
       </section>
@@ -66,7 +66,9 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="flex flex-col items-center justify-center gap-8 p-10">
-          <h5 className="text-3xl font-bold text-text underline">Contact</h5>
+          <h5 id="contact" className="text-3xl font-bold text-text underline">
+            Contact
+          </h5>
           <div className="grid grid-cols-2 justify-center items-center md:grid-cols-5 gap-5 w-full min-w-80">
             <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />

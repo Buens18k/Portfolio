@@ -1,0 +1,67 @@
+{
+  "title": "ArgentBank",
+  "projectName": "Front-end implementation for a banking application",
+  "sstitle": "React/Redux project with OpenClassRoom",
+  "src": "argentBankLogo.webp",
+  "alt": "Logo ArgentBank",
+  "missingItemReactRedux": [
+    {
+      "title": "Missions :",
+      "items": ["Setting up the front-end", "Wireframe compliance", "User authentication", "Customize user name"]
+    },
+    { "title": "Management & tools :", "items": ["Figma", "Coding guidelines"] },
+    { "title": "Programming language :", "items": ["ReactJs", "SASS", "Redux"] }
+  ],
+
+  "sections": [
+    {
+      "title": "Home Page",
+      "itemProjects": [
+        {
+          "src": "p11.webp",
+          "alt": "Image Home Page",
+          "items": ["Hero component.", "Reusable FeatureItems component.", "Routing logic."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Login Page",
+      "itemProjects": [
+        {
+          "src": "loginPageArgentBank.webp",
+          "alt": "Image Login Page",
+          "items": [
+            "Authentication form.",
+            "API POST request for authentication.",
+            "JWT storage in LocalStorage.",
+            "Redux store auth managing authentication."
+          ],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    },
+    {
+      "title": "Account User Page",
+      "itemProjects": [
+        {
+          "src": "accountPageArgentBank.webp",
+          "alt": "Image Account Page User",
+          "items": ["Retrieves User information from the API.", "Update information in the Redux Store User.", "Reusable Account component."],
+          "flexDirection": "row"
+        }
+      ]
+    },
+    {
+      "title": "Edit Page",
+      "itemProjects": [
+        {
+          "src": "accountPageEditNameArgentBank.webp",
+          "alt": "Image form for editing user name from Account Page",
+          "items": ["User name customization only.", "Save or cancel the current modification.", "Update BDD and Store Redux accordingly."],
+          "flexDirection": "row-reverse"
+        }
+      ]
+    }
+  ]
+}

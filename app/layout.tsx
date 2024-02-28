@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 // import { Inter } from 'next/font/google';
-import { elsie } from './components/font';
+import { hmong } from './components/font';
 import Footer from './components/footer';
 import Header from './components/header';
 import './globals.css';
@@ -9,25 +9,25 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfolio-idauu3o96-buens18ks-projects.vercel.app/'),
-  title: 'Portfolio de Bruno Vang',
+  title: {
+    absolute: '',
+    default: 'Portfolio de Bruno Vang',
+    template: '%s - Portfolio de Bruno Vang',
+  },
   description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
   openGraph: {
-    title: 'Portfolio de Bruno Vang',
-    description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
+    type: 'website',
     images: [
       {
-        url: '/app/favicon.ico',
-        width: '800',
-        height: '600',
-        alt: 'icon Buens 18k',
+        url: './images/moiPNG.webp',
       },
     ],
   },
   twitter: {
-    card: 'summary',
-    title: 'Portfolio de Bruno Vang',
-    description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
-    images: ['/app/favicon.ico'],
+    card: 'summary_large_image',
+    site: '@site',
+    creator: '@creator',
+    images: './images/moiPNG.webp',
   },
 };
 
@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-background max-w-screen-2xl m-auto text-text ${elsie.className}`}>
+      <body className={`bg-background max-w-screen-2xl m-auto text-text ${hmong.className}`}>
         <Header />
         {children}
         <Footer />
