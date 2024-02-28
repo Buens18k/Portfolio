@@ -19,25 +19,30 @@ const MenuItems: React.FC<{ isMenuOpen: boolean; toggleMenu: () => void }> = ({ 
       </li>
     )}
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <Link href="/#skills" className="text-3xl hover:underline duration-100">
+      <Link href="/#skills" className="text-3xl md:text-2xl hover:underline duration-100">
         Skills
       </Link>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <Link href="/#projects" className="text-3xl hover:underline duration-100">
+      <Link href="/#projects" className="text-3xl md:text-2xl hover:underline duration-100">
         Projects
       </Link>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <Link href="/about" className="text-3xl hover:underline duration-100">
-        About
+      <Link href="/#contact" className="text-3xl md:text-2xl hover:underline duration-100">
+        Contact
       </Link>
     </li>
     <li className="mx-4 my-5 md:my-0 cursor-pointer">
-      <Link href="" className="text-3xl hover:underline duration-100">
-        Dev JV
+      <Link href="/about" className="text-3xl md:text-2xl hover:underline duration-100" target="blank">
+        About
       </Link>
     </li>
+    {/* <li className="mx-4 my-5 md:my-0 cursor-pointer">
+      <Link href="" className="text-3xl hover:underline duration-100" target="blank">
+        Dev JV
+      </Link>
+    </li> */}
   </ul>
 );
 

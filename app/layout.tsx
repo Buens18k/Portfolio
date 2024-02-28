@@ -17,13 +17,9 @@ export const metadata: Metadata = {
   description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
   openGraph: {
     type: 'website',
-    url: 'https://portfolio-idauu3o96-buens18ks-projects.vercel.app',
-    title: 'Portfolio de Bruno Vang',
-    description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
-    siteName: 'My portfolio',
     images: [
       {
-        url: '/app/favicon.ico',
+        url: '/images/moiPNG.webp',
       },
     ],
   },
@@ -31,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@site',
     creator: '@creator',
-    images: '/app/favicon.ico',
+    images: '/images/moiPNG.webp',
   },
 };
 
