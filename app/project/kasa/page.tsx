@@ -32,7 +32,7 @@ function Project() {
             <div
               key={itemIndex}
               className={`flex flex-col items-center gap-5 md:${
-                item.flexDirection === 'row-reverse' ? 'flex-row-reverse' : 'flex-row'
+                item.flexDirection === 'row-reverse' ? 'b-flex-reverse' : 'flex-row'
               } md:justify-around`}
             >
               <ItemProject src={item.src} alt={item.alt} items={item.items} />

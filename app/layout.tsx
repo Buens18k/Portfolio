@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/moiPNG.webp',
+        url: './images/moiPNG.webp',
       },
     ],
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@site',
     creator: '@creator',
-    images: '/images/moiPNG.webp',
+    images: './images/moiPNG.webp',
   },
 };
 
