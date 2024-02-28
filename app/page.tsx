@@ -66,7 +66,9 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="flex flex-col items-center justify-center gap-8 p-10">
-          <h5 className="text-3xl font-bold text-text underline">Contact</h5>
+          <h5 id="contact" className="text-3xl font-bold text-text underline">
+            Contact
+          </h5>
           <div className="grid grid-cols-2 justify-center items-center md:grid-cols-5 gap-5 w-full min-w-80">
             <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub', url: 'https://github.com/Buens18k' }} />
             <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />

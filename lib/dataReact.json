@@ -5,9 +5,9 @@
   "src": "logoKasa.webp",
   "alt": "Logo Kasa",
   "missingItemReact": [
-    { "title": "Mission", "items": ["Home Page", "House Page", "About Page", "Error Page", "Design conformity"] },
-    { "title": "Management & tools", "items": ["Figma", "Coding guidelines"] },
-    { "title": "Programming language", "items": ["ReactJs", "SASS"] }
+    { "title": "Mission :", "items": ["Home Page", "House Page", "About Page", "Error Page", "Design conformity"] },
+    { "title": "Management & tools :", "items": ["Figma", "Coding guidelines"] },
+    { "title": "Programming language :", "items": ["ReactJs", "SASS"] }
   ],
   "sections": [
     {

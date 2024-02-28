@@ -13,11 +13,13 @@ function About() {
           priority
           className="w-auto h-auto rounded-2xl flex justify-center"
         />
-        <div className="flex flex-col justify-center items-center text-center gap-5">
-          <h1 className="text-xl font-bold">{data.aboutData.title}</h1>
-          <div className="flex flex-col gap-5 bg-menu rounded-2xl p-3">
+        <div className="flex flex-col justify-center items-center text-center gap-5 md:gap-10">
+          <h1 className="text-xl font-bold xl:text-3xl underline">{data.aboutData.title}</h1>
+          <div className="flex flex-col gap-5 bg-menu rounded-2xl p-3 xl:">
             {data.aboutData.paragraphs.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p className="md:text-xl xl:text-2xl" key={index}>
+                {paragraph}
+              </p>
             ))}
           </div>
         </div>

@@ -5,9 +5,9 @@
   "src": "bluel.webp",
   "alt": "Photo by Sophie Bluel",
   "missingItemJS": [
-    { "title": "Mission :", "items": ["Work presentation page", "Administrator login page", "Modal"] },
-    { "title": "Management & tools", "items": ["Kanban", "Figma"] },
-    { "title": "Programming language", "items": ["JavaScript", "CSS"] }
+    { "title": "Missions :", "items": ["Work presentation page", "Administrator login page", "Modal"] },
+    { "title": "Management & tools :", "items": ["Kanban", "Figma"] },
+    { "title": "Programming languages :", "items": ["JavaScript", "CSS"] }
   ],
   "sections": [
     {
