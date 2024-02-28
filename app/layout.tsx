@@ -8,6 +8,7 @@ import './globals.css';
 // const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://portfolio-theta-seven-36.vercel.app/'),
   title: {
     absolute: '',
     default: 'Portfolio de Bruno Vang',
