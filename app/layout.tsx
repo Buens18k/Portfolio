@@ -17,9 +17,10 @@ export const metadata: Metadata = {
   description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
   openGraph: {
     type: 'website',
+    url: 'https://portfolio-theta-seven-36.vercel.app/',
     images: [
       {
-        url: './images/moiPNG.webp',
+        url: 'https://portfolio-theta-seven-36.vercel.app/images/moiPNG.webp',
       },
     ],
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@site',
     creator: '@creator',
-    images: './images/moiPNG.webp',
+    images: 'https://portfolio-theta-seven-36.vercel.app/images/moiPNG.webp',
   },
 };
 
