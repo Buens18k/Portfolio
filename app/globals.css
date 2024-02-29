@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes slideIn {
   0% {
     transform: translateX(100%);
@@ -20,9 +24,3 @@
 .animate-slideIn {
   animation: slideIn 0.3s forwards;
 }
-
-/*  purgecss start ignore */
-.b-flex-reverse {
-  flex-direction: row-reverse;
-}
-/*  purgecss end ignore */

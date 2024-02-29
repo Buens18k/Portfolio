@@ -1,12 +1,9 @@
-import type { Metadata } from 'next';
-// import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from 'next';
 import { hmong } from './components/font';
 import Footer from './components/footer';
 import Header from './components/header';
 import './globals.css';
-
-// const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfolio-theta-seven-36.vercel.app/'),

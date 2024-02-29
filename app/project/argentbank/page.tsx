@@ -5,10 +5,10 @@ import data from '../../../lib/dataReactRedux.json';
 
 export const metadata: Metadata = {
   title: 'Project ArgentBank',
+  description: 'React/Redux Project with OpenClassRoom school',
 };
 
 function Project() {
-  // Constante qui stock les données depuis le fichier dataReactRedux.json
   const projectInfo = data;
 
   return (
@@ -23,11 +23,9 @@ function Project() {
           missingItems={projectInfo.missingItemReactRedux}
         />
       </section>
-      {/* Pour chaque objet du tableau des données,créer la section ci-dessous*/}
       {projectInfo.sections.map((section, index) => (
         <section key={index} className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
           <h3 className="flex justify-center font-semibold lg:text-2xl underline">{section.title}</h3>
-          {/* Pour chaque item créer cette div avec sa class passé en paramètre */}
           {section.itemProjects.map((item, itemIndex) => (
             <div
               key={itemIndex}

@@ -5,10 +5,10 @@ import data from '../../../lib/dataReact.json';
 
 export const metadata: Metadata = {
   title: 'Project Kasa',
+  description: 'React Project with OpenClassRoom school',
 };
 
 function Project() {
-  // Constante qui stock les données depuis le fichier dataReact.json
   const projectInfo = data;
 
   return (
@@ -23,11 +23,9 @@ function Project() {
           missingItems={projectInfo.missingItemReact}
         />
       </section>
-      {/* Pour chaque objet du tableau des données,créer la section ci-dessous pour chaque objet du tableau*/}
       {projectInfo.sections.map((section, index) => (
         <section key={index} className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
           <h3 className="flex justify-center font-semibold lg:text-2xl underline">{section.title}</h3>
-          {/* Pour chaque item créer cette div avec sa class passé en paramètre */}
           {section.itemProjects.map((item, itemIndex) => (
             <div
               key={itemIndex}

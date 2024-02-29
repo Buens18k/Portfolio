@@ -17,7 +17,6 @@ export default function Home() {
             <ButtonContact src="/images/linkedin.svg" buttonLink={{ title: 'Linkedin', url: 'https://www.linkedin.com/in/bruno-vang/' }} />
             <ButtonContact src="/images/xtwitter.svg" buttonLink={{ title: 'Twitter', url: 'https://twitter.com/_B18k' }} />
             <ButtonContact src="/images/instagram.svg" buttonLink={{ title: 'Instagram', url: 'https://www.instagram.com/vang_bruno18/' }} />
-            {/* <ButtonContact src="/images/mail.svg" buttonLink={{ title: 'Me contacter', url: 'mailto:buens@outlook.fr' }} /> */}
           </div>
         </div>
       </section>
