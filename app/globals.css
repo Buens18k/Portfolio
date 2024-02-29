@@ -2,27 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 0.7;
-  }
+.smooth-scroll {
+  scroll-behavior: smooth;
 }
-
-.animate-slideIn {
-  animation: slideIn 0.3s forwards;
-}
-
-/*  purgecss start ignore */
-.b-flex-reverse {
-  flex-direction: row-reverse;
-}
-/*  purgecss end ignore */
