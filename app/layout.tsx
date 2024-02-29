@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 // import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 import { hmong } from './components/font';
 import Footer from './components/footer';
 import Header from './components/header';
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className={`bg-background max-w-screen-2xl m-auto text-text ${hmong.className}`}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
       </body>
     </html>
