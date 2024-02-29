@@ -12,10 +12,10 @@ function Biography({ name, trade, text }: biographyProps) {
         I&apos;m ...
       </p>
       <h1 className="flex justify-center items-end text-2xl font-bold">
-        <span className=" text-5xl underline"> {name} </span>
+        <span className=" text-5xl "> {name} </span>
         <br />
       </h1>
-      <h2 className="flex justify-center items-center text-2xl md:text-4xl xl:text-5xl font-semibold underline">
+      <h2 className="flex justify-center items-center text-2xl md:text-4xl xl:text-5xl font-semibold">
         {trade}
         <br />
       </h2>

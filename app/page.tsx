@@ -22,7 +22,7 @@ export default function Home() {
       </section>
       <section className="flex w-full">
         <div className="flex flex-col justify-center w-full items-center gap-6">
-          <h2 className="text-4xl font-bold text-text underline" id="skills">
+          <h2 className="text-4xl font-bold text-text" id="skills">
             Skills
           </h2>
           <div className="flex flex-col w-full gap-3 lg:flex-row lg:gap-7 md:flex-row md:w-3/4">
@@ -47,7 +47,7 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="flex flex-col items-center gap-8 ">
-          <h4 className="text-3xl font-bold text-text underline" id="projects">
+          <h4 className="text-3xl font-bold text-text" id="projects">
             Projects
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
       <section className="w-full">
         <div className="flex flex-col items-center justify-center gap-8 p-10">
-          <h5 id="contact" className="text-3xl font-bold text-text underline">
+          <h5 id="contact" className="text-3xl font-bold text-text">
             Contact
           </h5>
           <div className="grid grid-cols-2 justify-center items-center md:grid-cols-5 gap-5 w-full min-w-80">

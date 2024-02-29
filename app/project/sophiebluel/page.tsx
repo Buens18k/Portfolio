@@ -26,7 +26,7 @@ function Project() {
       </section>
       {projectInfo.sections.map((section, index) => (
         <section key={index} className="flex flex-col gap-3 lg:gap-12 bg-menu rounded-xl p-3 lg:p-8">
-          <h3 className="flex justify-center font-semibold lg:text-2xl underline">{section.title}</h3>
+          <h3 className="flex justify-center font-semibold lg:text-2xl">{section.title}</h3>
           {section.itemProjects.map((item, itemIndex) => (
             <div
               key={itemIndex}
