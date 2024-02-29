@@ -16,10 +16,10 @@ interface missingProps {
 export default function Missing({ titleName, projectName, ssProjectName, src, alt, missingItems }: missingProps) {
   return (
     <>
-      <h1 className="flex text-center justify-center text-2xl md:text-3xl lg:text-5xl font-bold underline">{titleName}</h1>
+      <h1 className="flex text-center justify-center text-2xl md:text-3xl lg:text-5xl font-bold">{titleName}</h1>
       <div className="flex flex-col gap-4 xl:gap-8">
         <div className="flex flex-col justify-center items-center">
-          <p className="flex text-center font-semibold justify-center underline md:text-xl lg:text-2xl">{projectName}</p>
+          <p className="flex text-center font-semibold justify-center md:text-xl lg:text-2xl">{projectName}</p>
           <span className="flex text-center justify-center text-sm md:text-base lg:text-xl">{`(${ssProjectName})`}</span>
         </div>
         <div className="flex justify-center">
