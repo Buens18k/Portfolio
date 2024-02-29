@@ -15,13 +15,13 @@ export const metadata: Metadata = {
   description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
   openGraph: {
     type: 'website',
-    url: 'https://portfolio-theta-seven-36.vercel.app/',
+    url: 'https://portfoliobrunovang-theta-seven-36.vercel.app/',
     title: 'Portfolio de Bruno Vang',
     siteName: 'Bruno Vang',
     description: 'Portfolio de Bruno Vang, Developpeur Front end à Bourges',
     images: [
       {
-        url: 'https://portfolio-theta-seven-36.vercel.app/images/moiPNG.webp',
+        url: 'https://portfoliobrunovang-theta-seven-36.vercel.app/images/moiPNG.webp',
       },
     ],
   },
