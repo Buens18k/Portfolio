@@ -6,7 +6,7 @@ import Header from './components/header';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio-theta-seven-36.vercel.app/'),
+  metadataBase: new URL('https://portfoliobrunovang-theta-seven-36.vercel.app/'),
   title: {
     absolute: '',
     default: 'Portfolio de Bruno Vang',
