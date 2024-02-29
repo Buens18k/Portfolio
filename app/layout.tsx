@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="smooth-scroll">
       <body className={`bg-background max-w-screen-2xl m-auto text-text ${hmong.className}`}>
         <Header />
         {children}

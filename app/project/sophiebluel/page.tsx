@@ -1,3 +1,4 @@
+import ButtonContact from '@/app/components/buttonContact';
 import ItemProject from '@/app/components/projects/itemProject';
 import Missing from '@/app/components/projects/missing';
 import { Metadata } from 'next';
@@ -38,6 +39,9 @@ function Project() {
           ))}
         </section>
       ))}
+      <div className="flex justify-center max-w-screen-2xl mx-auto">
+        <ButtonContact src="/images/github.svg" buttonLink={{ title: 'GitHub repository link', url: projectInfo.gitHubRepoUrl }} />
+      </div>
     </main>
   );
 }
