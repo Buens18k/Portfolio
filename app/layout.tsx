@@ -43,24 +43,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// <!-- HTML Meta Tags -->
-// <title>Portfolio de Bruno Vang</title>
-// <meta name="description" content="Portfolio de Bruno Vang, Developpeur Front end à Bourges">
-
-// <!-- Facebook Meta Tags -->
-// <meta property="og:url" content="https://portfolio-theta-seven-36.vercel.app/">
-// <meta property="og:type" content="website">
-// <meta property="og:title" content="Portfolio de Bruno Vang">
-// <meta property="og:description" content="Portfolio de Bruno Vang, Developpeur Front end à Bourges">
-// <meta property="og:image" content="https://portfolio-idauu3o96-buens18ks-projects.vercel.app/app/favicon.ico">
-
-// <!-- Twitter Meta Tags -->
-// <meta name="twitter:card" content="summary_large_image">
-// <meta property="twitter:domain" content="portfolio-theta-seven-36.vercel.app">
-// <meta property="twitter:url" content="https://portfolio-theta-seven-36.vercel.app/">
-// <meta name="twitter:title" content="Portfolio de Bruno Vang">
-// <meta name="twitter:description" content="Portfolio de Bruno Vang, Developpeur Front end à Bourges">
-// <meta name="twitter:image" content="https://portfolio-idauu3o96-buens18ks-projects.vercel.app/app/favicon.ico">
-
-// <!-- Meta Tags Generated via https://www.opengraph.xyz --></meta>
