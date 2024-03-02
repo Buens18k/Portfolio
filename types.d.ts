@@ -7,7 +7,7 @@ export type LogoProps = {
   height?: number;
 };
 
-export type ButtonLink = {
+export type contactLink = {
   title: string;
   url: string;
 };
