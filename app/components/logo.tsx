@@ -5,9 +5,9 @@ import { LogoProps } from '../../types';
 function Logo({ src, alt, className, width, height }: LogoProps) {
   return (
     <Link href="/">
-      <button className="cursor-pointer" aria-label="Return Home Page" type="button">
+      <div className="cursor-pointer" aria-label="Return Home Page" role="button">
         <Image src={`/images/${src}`} alt={alt} className={className} width={width} height={height} priority />
-      </button>
+      </div>
     </Link>
   );
 }
