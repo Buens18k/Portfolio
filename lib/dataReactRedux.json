@@ -9,7 +9,7 @@
       "title": "Missions :",
       "items": ["Setting up the front-end", "Wireframe compliance", "User authentication", "Customize user name"]
     },
-    { "title": "Management & tools :", "items": ["Figma", "Coding guidelines"] },
+    { "title": "Management & tools :", "items": ["Wireframes"] },
     { "title": "Programming language :", "items": ["ReactJs", "SASS", "Redux"] }
   ],
 
