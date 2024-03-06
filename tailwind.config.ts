@@ -12,6 +12,11 @@ const config: Config = {
         text: '#FFE7B3',
         menu: '#1B180F',
       },
+      dropShadow: {
+        skill: '0 12px 20px #FFE7B3',
+        banner: '0 12px 20px #FFE7B3',
+        name: '0 -5px 5px #FFE7B3',
+      },
     },
   },
   variants: {
