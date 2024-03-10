@@ -12,6 +12,11 @@ const config: Config = {
         text: '#FFE7B3',
         menu: '#1B180F',
       },
+      dropShadow: {
+        skill: '0 12px 20px #FFE7B3',
+        banner: '0 0px 10px #FFE7B3',
+        name: '0 -5px 5px #FFE7B3',
+      },
     },
   },
   variants: {
@@ -31,6 +36,13 @@ const config: Config = {
         },
         '.animate-slideIn': {
           animation: 'slideIn 0.3s forwards',
+        },
+        '@keyframes slideRightToLeft': {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0%)' },
+        },
+        '.animate-slideRightToLeft': {
+          animation: 'slideRightToLeft 0.3s ease-out forwards',
         },
       };
       addUtilities(newUtilities);
