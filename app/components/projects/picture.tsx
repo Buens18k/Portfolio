@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 interface PictureProps {
   src: string;
@@ -5,7 +6,7 @@ interface PictureProps {
 }
 function PictureProject({ src, alt }: PictureProps) {
   return (
-    <div className="flex justify-center relative overflow-hidden group rounded-xl">
+    <div className="flex justify-center relative overflow-hidden group rounded-xl hover:drop-shadow-banner">
       <Image
         className="flex object-containt rounded-xl w-full md:w-full max-w-96 h-auto transition-transform duration-300 transform-gpu group-hover:scale-125 ease-in-out"
         src={`/images/projects/${src}`}
