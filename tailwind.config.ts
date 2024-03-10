@@ -37,12 +37,12 @@ const config: Config = {
         '.animate-slideIn': {
           animation: 'slideIn 0.3s forwards',
         },
-        '@keyframes slideRightToLeft': {
+        '@keyframes slideDowntoUp': {
           '0%': { transform: 'translateY(100%)' },
           '100%': { transform: 'translateY(0%)' },
         },
-        '.animate-slideRightToLeft': {
-          animation: 'slideRightToLeft 0.3s ease-out forwards',
+        '.animate-slideDowntoUp': {
+          animation: 'slideDowntoUp 0.3s ease-out forwards',
         },
       };
       addUtilities(newUtilities);

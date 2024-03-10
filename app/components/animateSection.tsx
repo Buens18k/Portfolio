@@ -11,7 +11,7 @@ function AnimateSection({ children }: AnimateSectionProps) {
     threshold: 0.1,
   });
   return (
-    <div ref={ref} className={`transition-transform duration-300 ${inView ? 'animate-slideRightToLeft' : ''}`}>
+    <div ref={ref} className={`will-change-scroll transition-transform duration-300 ${inView ? 'animate-slideDowntoUp' : 'opacity-0'}`}>
       {children}
     </div>
   );
