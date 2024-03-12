@@ -3,8 +3,8 @@ import data from '../lib/data.json';
 import AnimateSection from './components/animateSection';
 import Banner from './components/banner';
 import Biography from './components/biography';
+import CardProject from './components/cardProject';
 import LinkContact from './components/linkContact';
-import Project from './components/project';
 import SkillsContent from './components/skillsContent';
 
 export default function Home() {
@@ -51,26 +51,30 @@ export default function Home() {
           </div>
         </section>
       </AnimateSection>
-      <AnimateSection>
-        <section className="w-full">
-          <div className="flex flex-col items-center gap-8 ">
-            <h4 className="text-3xl font-bold text-text drop-shadow-name" id="projects">
-              Projects
-            </h4>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Project link="project/sophiebluel" src="p6.webp" alt="picture Project 6" titleProject="Agence ArchiWebos" text={data.textProject.js} />
-              <Project link="project/kasa" src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={data.textProject.reactJS} />
-              <Project
-                link="project/argentbank"
-                src="p11.webp"
-                alt="picture Project 11"
-                titleProject="Agence ArgentBank"
-                text={data.textProject.reactRedux}
-              />
-            </div>
+      <section className="w-full">
+        <div className="flex flex-col items-center gap-8 ">
+          <h4 className="text-3xl font-bold text-text drop-shadow-name" id="projects">
+            Projects
+          </h4>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <CardProject
+              link="project/sophiebluel"
+              src="p6.webp"
+              alt="picture Project 6"
+              titleProject="Agence ArchiWebos"
+              text={data.textProject.js}
+            />
+            <CardProject link="project/kasa" src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={data.textProject.reactJS} />
+            <CardProject
+              link="project/argentbank"
+              src="p11.webp"
+              alt="picture Project 11"
+              titleProject="Agence ArgentBank"
+              text={data.textProject.reactRedux}
+            />
           </div>
-        </section>
-      </AnimateSection>
+        </div>
+      </section>
       <AnimateSection>
         <section className="w-full">
           <div className="flex flex-col items-center justify-center gap-8 p-10">
