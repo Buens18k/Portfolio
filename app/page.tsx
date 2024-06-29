@@ -6,13 +6,16 @@ import Biography from './components/biography';
 import CardProject from './components/cardProject';
 import LinkContact from './components/linkContact';
 import SkillsContent from './components/skillsContent';
+import { CardContainer } from './components/ui/3d-card';
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen p-10 max-w-screen-2xl gap-40">
       <AnimateSection>
         <section className="flex flex-col gap-5 justify-center md:justify-between items-center md:flex-row w-full ">
-          <Banner src="moi.webp" alt="Photo Profil de Bruno" />
+          <CardContainer>
+            <Banner src="moi.webp" alt="Photo Profil de Bruno" />
+          </CardContainer>
           <div className=" flex flex-col gap-8 md:w-7/12 lg:w-2/3">
             <Biography name={data.userName.name} trade="Developer Front-end" text={data.mutliText.lines} />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5 w-full">
@@ -56,22 +59,29 @@ export default function Home() {
           <h4 className="text-3xl font-bold text-text drop-shadow-name" id="projects">
             Projects
           </h4>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <CardProject
-              link="project/sophiebluel"
-              src="p6.webp"
-              alt="picture Project 6"
-              titleProject="Agence ArchiWebos"
-              text={data.textProject.js}
-            />
-            <CardProject link="project/kasa" src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={data.textProject.reactJS} />
-            <CardProject
-              link="project/argentbank"
-              src="p11.webp"
-              alt="picture Project 11"
-              titleProject="Agence ArgentBank"
-              text={data.textProject.reactRedux}
-            />
+            <CardContainer>
+              <CardProject
+                link="project/sophiebluel"
+                src="p6.webp"
+                alt="picture Project 6"
+                titleProject="Agence ArchiWebos"
+                text={data.textProject.js}
+              />
+            </CardContainer>
+            <CardContainer>
+              <CardProject link="project/kasa" src="p8.webp" alt="picture Project 8" titleProject="Agence KASA" text={data.textProject.reactJS} />
+            </CardContainer>
+            <CardContainer>
+              <CardProject
+                link="project/argentbank"
+                src="p11.webp"
+                alt="picture Project 11"
+                titleProject="Agence ArgentBank"
+                text={data.textProject.reactRedux}
+              />
+            </CardContainer>
           </div>
         </div>
       </section>
