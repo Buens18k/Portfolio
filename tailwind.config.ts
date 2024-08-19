@@ -1,8 +1,16 @@
 import type { Config } from 'tailwindcss';
 import plugin from 'tailwindcss/plugin';
 
+const { default: flattenColorPalette } = require('tailwindcss/lib/util/flattenColorPalette');
+
 const config: Config = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './util/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  darkMode: 'class',
   safelist: ['flex-row', 'flew-row-reverse'],
   theme: {
     extend: {
@@ -27,7 +35,8 @@ const config: Config = {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities, theme }) {
+    addVariablesForColors,
+    plugin(function ({ addUtilities }) {
       const newUtilities = {
         '@keyframes slideIn': {
           '0%': { transform: 'translateX(100%)', opacity: '0' },
@@ -49,4 +58,13 @@ const config: Config = {
     }),
   ],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme('colors'));
+  let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
+
+  addBase({
+    ':root': newVars,
+  });
+}
 export default config;

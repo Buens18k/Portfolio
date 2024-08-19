@@ -5,3 +5,13 @@
 .smooth-scroll {
   scroll-behavior: smooth;
 }
+
+:root {
+  --rotate-x: 0deg;
+  --rotate-y: 0deg;
+}
+
+.pictureContainer {
+  transition: transform 0.5s ease;
+  transform: rotateY(var(--rotate-y)) rotateX(var(--rotate-x));
+}
